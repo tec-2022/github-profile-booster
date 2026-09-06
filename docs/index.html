@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Profile Booster</title>
+  <meta name="description" content="Templates, badges and checklists for students who want a better GitHub profile." />
+  <style>
+    :root { color-scheme: dark; --bg:#020617; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --blue:#38bdf8; --violet:#a78bfa; --green:#4ade80; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: radial-gradient(circle at 80% 0%, #1d4ed833, transparent 36%), radial-gradient(circle at 10% 90%, #7c3aed33, transparent 34%), var(--bg); color:var(--text); }
+    a { color: inherit; }
+    .wrap { width:min(1080px, calc(100% - 32px)); margin:0 auto; }
+    header { padding:74px 0 42px; text-align:center; }
+    .eyebrow { display:inline-flex; gap:8px; align-items:center; padding:8px 14px; border:1px solid #334155; border-radius:999px; background:#0f172ab3; color:#bfdbfe; font-weight:700; font-size:14px; }
+    h1 { margin:22px auto 14px; max-width:900px; font-size:clamp(42px, 8vw, 82px); line-height:.95; letter-spacing:-.06em; }
+    .lead { margin:0 auto; max-width:760px; color:var(--muted); font-size:clamp(18px, 2.4vw, 24px); line-height:1.55; }
+    .actions { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:0 18px; border-radius:14px; text-decoration:none; font-weight:800; border:1px solid #334155; background:#111827; }
+    .btn.primary { background:linear-gradient(135deg,#2563eb,#7c3aed); border-color:transparent; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; padding:28px 0 70px; }
+    .card { background:linear-gradient(180deg,#0f172af2,#111827e6); border:1px solid #334155; border-radius:24px; padding:24px; min-height:210px; box-shadow:0 20px 80px #0006; }
+    .card h2 { margin:0 0 10px; font-size:22px; }
+    .card p { margin:0; color:var(--muted); line-height:1.65; }
+    .tag { display:inline-flex; margin-bottom:16px; padding:7px 10px; border-radius:999px; background:#1e293b; color:#c4b5fd; font-size:13px; font-weight:800; }
+    .wide { grid-column:1 / -1; min-height:auto; display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center; }
+    pre { margin:0; white-space:pre-wrap; background:#020617; border:1px solid #1f2937; border-radius:18px; padding:18px; color:#d1d5db; overflow:auto; }
+    footer { border-top:1px solid #1f2937; color:#64748b; padding:28px 0 42px; text-align:center; }
+    @media (max-width: 800px) { .grid, .wide { grid-template-columns:1fr; } .wide { display:block; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <span class="eyebrow">⭐ Open-source profile kit</span>
+    <h1>Make your GitHub profile feel alive.</h1>
+    <p class="lead">A practical kit with README templates, badge catalogs, launch checklists and safe public repo ideas for students and junior developers.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/tec-2022/github-profile-booster">View on GitHub</a>
+      <a class="btn" href="https://github.com/tec-2022/github-profile-booster/tree/main/templates">Use the templates</a>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <span class="tag">01 · Templates</span>
+      <h2>Start from a polished README</h2>
+      <p>Choose pro, minimal or bilingual layouts and replace placeholders with your real stack, links and focus.</p>
+    </section>
+    <section class="card">
+      <span class="tag">02 · Badges</span>
+      <h2>Add icons without clutter</h2>
+      <p>Copy badge rows for TypeScript, React, Next.js, .NET, Python, Go, Supabase, Docker and more.</p>
+    </section>
+    <section class="card">
+      <span class="tag">03 · Growth</span>
+      <h2>Build repos people can star</h2>
+      <p>Use safe public repo ideas, checklists and launch tips that avoid exposing private code.</p>
+    </section>
+    <section class="card wide">
+      <div>
+        <span class="tag">Quick copy</span>
+        <h2>A cleaner profile formula</h2>
+        <p>Lead with who you are, what you build, the stack you actually use and one useful public resource.</p>
+      </div>
+      <pre>clear intro + real badges + safe public repo + useful README = stronger GitHub profile</pre>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    Made for students who are building in public, one clean README at a time.
+  </footer>
+</body>
+</html>
