@@ -16,10 +16,11 @@
   <a href="./templates/profile-readme-pro.md">Pro template</a> ·
   <a href="./docs/badges.md">Badge catalog</a> ·
   <a href="./docs/launch-plan.md">Launch plan</a> ·
+  <a href="https://tec-2022.github.io/github-profile-booster/">Live site</a> ·
   <a href="./docs/es/README.md">Español</a>
 </p>
 
-A practical GitHub profile kit for students and junior developers who want a profile that looks clear, credible and alive without exposing private projects.
+A practical GitHub profile kit for students and junior developers who want a profile that looks clear, credible and alive without exposing private projects. See the live landing page at https://tec-2022.github.io/github-profile-booster/.
 
 If this helps your profile, consider giving the repo a ⭐ so more students can find it.
 
@@ -106,3 +107,4 @@ Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a pull request.
 ## License
 
 MIT — use it, remix it and make your profile shine.
+
