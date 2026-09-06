@@ -2,22 +2,32 @@
 
 ## First impression
 
-- [ ] Clear name and short bio.
-- [ ] Header/banner or visual element.
-- [ ] Stack badges match technologies you actually use.
-- [ ] No private project names or sensitive school/client details.
+- [ ] Your name and bio are clear.
+- [ ] The first screen has a visual element.
+- [ ] Your strongest stack appears near the top.
+- [ ] Links are public and safe.
+- [ ] The profile does not expose private project names or sensitive details.
 
-## Repositories
+## README quality
 
-- [ ] Public repos have a README.
-- [ ] README explains the problem and how to use the repo.
-- [ ] Repo has topics.
-- [ ] Repo has a license if others can reuse it.
-- [ ] Issues are enabled for feedback.
+- [ ] The intro says what you are learning/building.
+- [ ] Sections are short and scannable.
+- [ ] Badges match tools you actually use.
+- [ ] There are no broken image links.
+- [ ] There is no wall of random stats.
+
+## Repository quality
+
+- [ ] Public repos have README files.
+- [ ] Repos explain what someone can learn or reuse.
+- [ ] Topics are configured.
+- [ ] Issues are enabled.
+- [ ] A license is included when reuse is allowed.
+- [ ] Example data is fake or generic.
 
 ## Growth
 
-- [ ] Ask classmates/friends to star if it helps them.
-- [ ] Share one useful repo on LinkedIn, Discord or school groups.
-- [ ] Keep public repos small, polished and easy to understand.
-- [ ] Add screenshots or SVG visuals where possible.
+- [ ] Share one repo with people who could actually use it.
+- [ ] Open one beginner-friendly issue.
+- [ ] Add examples over time.
+- [ ] Keep the README updated as your stack changes.

@@ -1,0 +1,18 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="260" rx="28" fill="#0b1220"/>
+  <text x="60" y="74" font-family="Segoe UI, Inter, Arial" font-size="30" font-weight="800" fill="#fff">What this kit helps you build</text>
+  <g transform="translate(60 112)">
+    <rect width="240" height="84" rx="18" fill="#111827" stroke="#38bdf8"/>
+    <text x="28" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#e0f2fe">Polished README</text>
+    <text x="28" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Clear intro and structure</text>
+    <rect x="275" width="240" height="84" rx="18" fill="#111827" stroke="#a78bfa"/>
+    <text x="303" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#ede9fe">Real stack badges</text>
+    <text x="303" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Languages and tools</text>
+    <rect x="550" width="240" height="84" rx="18" fill="#111827" stroke="#4ade80"/>
+    <text x="578" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#dcfce7">Safe public ideas</text>
+    <text x="578" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">No private code leaks</text>
+    <rect x="825" width="240" height="84" rx="18" fill="#111827" stroke="#fb923c"/>
+    <text x="853" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#ffedd5">Launch checklist</text>
+    <text x="853" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">More shareable repos</text>
+  </g>
+</svg>

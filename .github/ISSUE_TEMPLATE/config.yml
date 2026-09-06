@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Docs
+    url: https://docs.github.com/
+    about: Official GitHub documentation for profile README files and repositories.
