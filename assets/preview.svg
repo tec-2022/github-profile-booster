@@ -1,18 +1,22 @@
-<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="260" rx="28" fill="#0b1220"/>
-  <text x="60" y="74" font-family="Segoe UI, Inter, Arial" font-size="30" font-weight="800" fill="#fff">A complete GitHub profile improvement loop</text>
-  <g transform="translate(60 112)">
-    <rect width="240" height="84" rx="18" fill="#111827" stroke="#38bdf8"/>
-    <text x="28" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#e0f2fe">1 · Audit</text>
-    <text x="28" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Find weak profile signals</text>
-    <rect x="275" width="240" height="84" rx="18" fill="#111827" stroke="#a78bfa"/>
-    <text x="303" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#ede9fe">2 · Generate</text>
-    <text x="303" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Build clean Markdown fast</text>
-    <rect x="550" width="240" height="84" rx="18" fill="#111827" stroke="#4ade80"/>
-    <text x="578" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#dcfce7">3 · Improve</text>
-    <text x="578" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Use templates and scorecards</text>
-    <rect x="825" width="240" height="84" rx="18" fill="#111827" stroke="#fb923c"/>
-    <text x="853" y="36" font-family="Segoe UI, Inter, Arial" font-size="18" font-weight="800" fill="#ffedd5">4 · Share</text>
-    <text x="853" y="62" font-family="Segoe UI, Inter, Arial" font-size="14" fill="#94a3b8">Join the community showcase</text>
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="280" rx="28" fill="#0b1220"/>
+  <text x="60" y="70" font-family="Segoe UI, Inter, Arial" font-size="30" font-weight="800" fill="#fff">Goal-aware profile improvement loop</text>
+  <text x="60" y="98" font-family="Segoe UI, Inter, Arial" font-size="15" fill="#94a3b8">From career direction to public evidence — not just more widgets.</text>
+  <g transform="translate(48 132)">
+    <rect width="204" height="92" rx="18" fill="#111827" stroke="#38bdf8"/>
+    <text x="24" y="37" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="#e0f2fe">1 · Choose goal</text>
+    <text x="24" y="65" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#94a3b8">Frontend, Data/AI, etc.</text>
+    <rect x="222" width="204" height="92" rx="18" fill="#111827" stroke="#a78bfa"/>
+    <text x="246" y="37" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="#ede9fe">2 · Analyze</text>
+    <text x="246" y="65" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#94a3b8">Read public profile + repos</text>
+    <rect x="444" width="204" height="92" rx="18" fill="#111827" stroke="#4ade80"/>
+    <text x="468" y="37" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="#dcfce7">3 · Rank proof</text>
+    <text x="468" y="65" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#94a3b8">Select strongest evidence</text>
+    <rect x="666" width="204" height="92" rx="18" fill="#111827" stroke="#fb923c"/>
+    <text x="690" y="37" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="#ffedd5">4 · Generate</text>
+    <text x="690" y="65" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#94a3b8">Draft from real public work</text>
+    <rect x="888" width="204" height="92" rx="18" fill="#111827" stroke="#f472b6"/>
+    <text x="912" y="37" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="#fce7f3">5 · Re-audit</text>
+    <text x="912" y="65" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#94a3b8">Refresh as your goal changes</text>
   </g>
 </svg>
