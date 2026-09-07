@@ -55,6 +55,18 @@ Copy only the badges that match your real stack. A clean profile beats a noisy p
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
 ```
 
+
+## Icon row option
+
+If you prefer real technology icons instead of text badges, use a single icon row:
+
+```md
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,cs,dotnet,py,go,html,css,react,nextjs,astro,vite,tailwind,nodejs,express,supabase,prisma,postgres,docker,vercel" alt="Tech stack icons" />
+</p>
+```
+
+This looks cleaner when your profile already has a visual stack section.
 ## Tips
 
 - Put your strongest technologies first.
