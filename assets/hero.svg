@@ -7,19 +7,20 @@
   <rect width="1200" height="520" rx="36" fill="url(#bg)"/>
   <circle cx="1005" cy="90" r="190" fill="#2563eb" opacity="0.24"/><circle cx="190" cy="430" r="230" fill="#7c3aed" opacity="0.22"/><circle cx="700" cy="480" r="170" fill="#16a34a" opacity="0.12"/>
   <path d="M92 365C232 235 342 405 501 286C665 164 786 272 936 174C1035 109 1091 124 1142 151" stroke="url(#accent)" stroke-width="5" opacity="0.72" filter="url(#glow)"/>
-  <g transform="translate(76 72)"><rect width="206" height="44" rx="22" fill="#0f766e" opacity="0.95"/><text x="103" y="29" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="white">FREE OPEN-SOURCE TOOLS</text></g>
+  <g transform="translate(76 72)"><rect width="256" height="44" rx="22" fill="#0f766e" opacity="0.95"/><text x="128" y="29" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="17" font-weight="800" fill="white">GOAL-AWARE · OPEN SOURCE</text></g>
   <text x="76" y="190" font-family="Segoe UI, Inter, Arial" font-size="68" font-weight="900" fill="white">GitHub Profile Booster</text>
-  <text x="80" y="246" font-family="Segoe UI, Inter, Arial" font-size="27" fill="#cbd5e1">Generate. Audit. Improve. Share a GitHub profile people understand.</text>
+  <text x="80" y="246" font-family="Segoe UI, Inter, Arial" font-size="27" fill="#cbd5e1">Make your GitHub prove the right things for your next goal.</text>
   <g transform="translate(82 305)">
-    <rect width="168" height="48" rx="24" fill="#172554" stroke="#60a5fa"/><text x="84" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#bfdbfe">GENERATOR</text>
-    <rect x="186" width="132" height="48" rx="24" fill="#2e1065" stroke="#a78bfa"/><text x="252" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#ddd6fe">AUDIT</text>
-    <rect x="336" width="166" height="48" rx="24" fill="#052e16" stroke="#4ade80"/><text x="419" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#bbf7d0">TEMPLATES</text>
-    <rect x="520" width="160" height="48" rx="24" fill="#431407" stroke="#fb923c"/><text x="600" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#fed7aa">SHOWCASE</text>
+    <rect width="172" height="48" rx="24" fill="#172554" stroke="#60a5fa"/><text x="86" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#bfdbfe">OPTIMIZER</text>
+    <rect x="190" width="132" height="48" rx="24" fill="#2e1065" stroke="#a78bfa"/><text x="256" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#ddd6fe">AUDIT</text>
+    <rect x="340" width="166" height="48" rx="24" fill="#052e16" stroke="#4ade80"/><text x="423" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#bbf7d0">GENERATOR</text>
+    <rect x="524" width="160" height="48" rx="24" fill="#431407" stroke="#fb923c"/><text x="604" y="31" text-anchor="middle" font-family="Segoe UI, Inter, Arial" font-size="16" font-weight="800" fill="#fed7aa">SHOWCASE</text>
   </g>
-  <g opacity="0.95">
-    <rect x="846" y="286" width="270" height="128" rx="18" fill="#020617" stroke="#334155"/>
-    <text x="872" y="319" font-family="Segoe UI, Inter, Arial" font-size="14" font-weight="800" fill="#94a3b8">PROFILE SIGNALS</text>
-    <circle cx="875" cy="350" r="10" fill="#22c55e"/><rect x="898" y="341" width="170" height="18" rx="9" fill="#334155"/>
-    <circle cx="875" cy="386" r="10" fill="#38bdf8"/><rect x="898" y="377" width="196" height="18" rx="9" fill="#334155"/>
+  <g opacity="0.97">
+    <rect x="836" y="282" width="286" height="142" rx="20" fill="#020617" stroke="#334155"/>
+    <text x="862" y="314" font-family="Segoe UI, Inter, Arial" font-size="14" font-weight="800" fill="#94a3b8">GOAL FIT · FRONTEND</text>
+    <text x="862" y="353" font-family="Segoe UI, Inter, Arial" font-size="34" font-weight="900" fill="white">82/100</text>
+    <rect x="862" y="372" width="220" height="10" rx="5" fill="#1f2937"/><rect x="862" y="372" width="180" height="10" rx="5" fill="url(#accent)"/>
+    <text x="862" y="408" font-family="Segoe UI, Inter, Arial" font-size="13" fill="#cbd5e1">3 strongest repos ranked by evidence</text>
   </g>
 </svg>
