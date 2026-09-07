@@ -19,7 +19,7 @@ I'm a computer science student focused on building useful web applications, orga
 - Web development with React, Next.js, TypeScript and Tailwind CSS.
 - Data and integrations with Supabase, Prisma, APIs and dashboards.
 - Clean interfaces for education, administration and information systems.
-- Applied AI features that solve practical problems.
+- Modern sites with Astro plus practical web features.
 
 ## Stack
 
@@ -30,7 +30,7 @@ I'm a computer science student focused on building useful web applications, orga
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/OpenAI%20Astra-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Astra" />
+  <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" alt="Astro" />
 </p>
 
 ## Public work
