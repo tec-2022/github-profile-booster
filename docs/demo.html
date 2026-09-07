@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>12-second Demo — GitHub Profile Booster</title>
+  <meta name="description" content="A short autoplay demo of the GitHub Profile Booster v2 workflow." />
+  <meta name="theme-color" content="#020617" />
+  <style>
+    :root{color-scheme:dark;--bg:#020617;--panel:#0f172a;--panel2:#0b1220;--line:#263244;--text:#f8fafc;--muted:#94a3b8;--blue:#38bdf8;--violet:#a78bfa;--green:#4ade80;--amber:#fbbf24}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 90% 0%,#1d4ed83a,transparent 35%),radial-gradient(circle at 5% 100%,#7c3aed30,transparent 30%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text)}a{color:inherit}.wrap{width:min(1080px,calc(100% - 28px));padding:28px 0}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px}.brand{font-weight:950;text-decoration:none}.btn{border:1px solid #334155;background:#111827;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:850}.stage{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line);border-radius:28px;background:var(--panel);box-shadow:0 30px 100px #0007}.chrome{height:54px;background:#0b1220;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 20px;gap:7px}.dot{width:11px;height:11px;border-radius:50%}.dot:nth-child(1){background:#f87171}.dot:nth-child(2){background:#fbbf24}.dot:nth-child(3){background:#4ade80}.url{margin-left:18px;border:1px solid #263244;background:#020617;border-radius:9px;padding:7px 12px;color:#64748b;font-size:12px;flex:1}.scene{position:absolute;inset:54px 0 0;display:flex;opacity:0;transform:translateY(10px) scale(.99);transition:opacity .35s ease,transform .35s ease;padding:34px}.scene.active{opacity:1;transform:none}.hero{align-items:center;justify-content:center;text-align:center;flex-direction:column}.eyebrow{display:inline-flex;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#111827;color:#c4b5fd;font-size:12px;font-weight:900}.hero h1{font-size:clamp(38px,6vw,66px);line-height:.96;letter-spacing:-.055em;margin:18px auto 12px}.hero p{font-size:19px;color:var(--muted);margin:0}.actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin-top:24px}.primary{background:linear-gradient(135deg,#2563eb,#7c3aed);border-color:transparent}.grid2{width:100%;display:grid;grid-template-columns:300px 1fr;gap:16px}.card{background:linear-gradient(180deg,#0f172a,#111827);border:1px solid var(--line);border-radius:20px;padding:20px}.card h2,.card h3{margin:0 0 8px}.big{font-size:46px;font-weight:950;letter-spacing:-.05em}.muted{color:var(--muted);line-height:1.55}.tracks{display:grid;gap:13px}.track{display:grid;grid-template-columns:110px 1fr 45px;gap:10px;align-items:center}.track strong{font-size:13px}.bar{height:10px;background:#1f2937;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#38bdf8,#8b5cf6);border-radius:99px}.compare{width:100%;display:grid;grid-template-columns:1fr 180px 1fr;gap:14px;align-items:center}.scorebox{text-align:center}.score{font-size:54px;font-weight:950}.bridge{text-align:center}.bridge .gap{font-size:36px;font-weight:950;color:#c4b5fd}.repos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;margin-top:15px}.repo{background:#0b1220;border:1px solid var(--line);border-radius:15px;padding:14px}.repo strong{display:block;margin-bottom:5px}.pill{display:inline-flex;margin-top:8px;padding:4px 7px;border-radius:999px;background:#1e293b;color:#cbd5e1;font-size:10px;font-weight:900}.code{width:100%;background:#020617;border:1px solid var(--line);border-radius:18px;padding:22px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#dbeafe;line-height:1.65;white-space:pre-wrap}.share{align-items:center;justify-content:center}.sharecard{width:min(780px,100%);padding:30px;border:1px solid #334155;border-radius:25px;background:linear-gradient(135deg,#0f172a,#172554)}.sharecard .score{color:var(--green)}.progress{position:absolute;left:34px;right:34px;bottom:18px;height:4px;background:#1f2937;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#38bdf8,#8b5cf6)}.counter{position:absolute;right:38px;bottom:30px;color:#64748b;font-size:11px;font-weight:900}.caption{text-align:center;color:#64748b;font-size:13px;margin-top:12px}@media(max-width:760px){.scene{padding:20px}.grid2,.compare{grid-template-columns:1fr}.compare .bridge{display:none}.repos{grid-template-columns:1fr}.track{grid-template-columns:90px 1fr 38px}.stage{aspect-ratio:10/16}.hero h1{font-size:42px}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a class="brand" href="./">GitHub Profile Booster 🚀</a><div><button class="btn" id="restart">↻ Replay</button> <a class="btn" href="./compare-goals.html?user=tec-2022&a=backend&b=fullstack">Try live demo</a></div></div>
+  <div class="stage">
+    <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url" id="url">github-profile-booster</div></div>
+
+    <section class="scene hero active" data-url="github-profile-booster"><span class="eyebrow">v2 · Evidence-first</span><h1>What does your GitHub actually prove?</h1><p>Diagnose · Compare · Position · Publish</p><div class="actions"><span class="btn primary">🧭 Map my signals</span><span class="btn">⚖️ Compare two goals</span></div></section>
+
+    <section class="scene" data-url="career-map.html?user=tec-2022"><div class="grid2"><div class="card scorebox"><div class="muted">Strongest current signal</div><h2>Full Stack</h2><div class="big">84/100</div><p class="muted">See what your public repositories communicate before choosing what to optimize.</p></div><div class="card"><h2>Career evidence map</h2><div class="tracks"><div class="track"><strong>Full Stack</strong><div class="bar"><i style="width:84%"></i></div><span>84</span></div><div class="track"><strong>Frontend</strong><div class="bar"><i style="width:76%"></i></div><span>76</span></div><div class="track"><strong>Backend</strong><div class="bar"><i style="width:68%"></i></div><span>68</span></div><div class="track"><strong>Open Source</strong><div class="bar"><i style="width:49%"></i></div><span>49</span></div><div class="track"><strong>Data / AI</strong><div class="bar"><i style="width:35%"></i></div><span>35</span></div></div></div></div></section>
+
+    <section class="scene" data-url="compare-goals.html?user=tec-2022&a=backend&b=fullstack"><div class="compare"><div class="card scorebox"><h2>Backend</h2><div class="score">68/100</div><p class="muted">Strong APIs and server-side evidence, but less dominant than Full Stack.</p></div><div class="bridge"><div class="muted">gap</div><div class="gap">16 pts</div><div class="muted">bridge plan →</div></div><div class="card scorebox"><h2>Full Stack</h2><div class="score">84/100</div><p class="muted">The visible combination of frontend + backend projects supports this direction more strongly.</p></div></div></section>
+
+    <section class="scene" data-url="optimizer.html?user=tec-2022&goal=fullstack"><div style="width:100%"><h2>Goal-Aware Optimizer</h2><p class="muted">Rank the public repositories that best prove the direction you selected.</p><div class="repos"><div class="repo"><strong>1 · uabc-portal</strong><span class="muted">Current public web project</span><br><span class="pill">strong goal signal</span></div><div class="repo"><strong>2 · lvltechmx</strong><span class="muted">Portfolio/product evidence</span><br><span class="pill">public proof</span></div><div class="repo"><strong>3 · webtecbiblioteca</strong><span class="muted">Practical web project</span><br><span class="pill">documented work</span></div></div></div></section>
+
+    <section class="scene" data-url="evidence-based README draft"><div style="width:100%"><h2>Generate from evidence, not memory.</h2><div class="code"># Hi, I'm Fredy 👋
+
+**Full Stack developer building useful web systems.**
+
+## Featured work
+### uabc-portal
+Public project demonstrating practical web development.
+
+### lvltechmx
+Portfolio and product-facing evidence.
+
+## Current direction
+Strengthening Full Stack evidence with current, documented work.</div></div></section>
+
+    <section class="scene share" data-url="shareable URL + 1200×630 result card"><div class="sharecard"><div class="eyebrow">GITHUB PROFILE BOOSTER · SHAREABLE RESULT</div><h2>@tec-2022 · Full Stack</h2><div class="score">82/100</div><p class="muted">Clarity · Proof · Freshness · Relevance · Credibility</p><div class="actions" style="justify-content:flex-start"><span class="btn primary">Copy share URL</span><span class="btn">Download PNG</span><span class="btn">⭐ Star project</span></div></div></section>
+
+    <div class="progress"><i id="progress"></i></div><div class="counter" id="counter">1/6</div>
+  </div>
+  <div class="caption">12-second autoplay demo · uses illustrative scores for the maintainer workflow · run the live tools for current results</div>
+</div>
+<script>
+const scenes=[...document.querySelectorAll('.scene')],url=document.getElementById('url'),progress=document.getElementById('progress'),counter=document.getElementById('counter');let index=0,timer=null,start=0;const stepMs=2000,total=scenes.length*stepMs;
+function show(i){index=i;scenes.forEach((s,n)=>s.classList.toggle('active',n===i));url.textContent=scenes[i].dataset.url;counter.textContent=`${i+1}/${scenes.length}`}
+function tick(){const elapsed=Date.now()-start,within=elapsed%total,i=Math.floor(within/stepMs);show(i);progress.style.width=`${within/total*100}%`;timer=requestAnimationFrame(tick)}
+function replay(){cancelAnimationFrame(timer);start=Date.now();show(0);tick()}
+document.getElementById('restart').addEventListener('click',replay);replay();
+</script>
+</body>
+</html>
