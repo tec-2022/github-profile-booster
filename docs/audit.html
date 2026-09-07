@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Profile Audit — GitHub Profile Booster</title>
+  <meta name="description" content="Audit a public GitHub profile README and get a quick 10-point improvement score." />
+  <meta name="theme-color" content="#020617" />
+  <style>
+    :root{color-scheme:dark;--bg:#020617;--panel:#0f172a;--line:#263244;--text:#f8fafc;--muted:#94a3b8;--green:#4ade80;--amber:#fbbf24;--red:#fb7185}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 85% 0%,#1d4ed833,transparent 32%),radial-gradient(circle at 5% 95%,#7c3aed2b,transparent 30%),var(--bg);color:var(--text)}a{color:inherit}.wrap{width:min(1020px,calc(100% - 28px));margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:10px}.brand{font-weight:900;text-decoration:none}.btn{border:1px solid #334155;background:#111827;color:#fff;border-radius:12px;min-height:42px;padding:0 14px;font:inherit;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.btn.primary{background:linear-gradient(135deg,#2563eb,#7c3aed);border-color:transparent}.btn.light{background:#f8fafc;color:#020617;border-color:#f8fafc}
+    header{text-align:center;padding:54px 0 30px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:#0f172ab3;color:#bfdbfe;font-size:13px;font-weight:900}h1{font-size:clamp(40px,7vw,70px);line-height:.96;letter-spacing:-.055em;margin:18px auto 14px}.lead{max-width:720px;margin:auto;color:var(--muted);font-size:19px;line-height:1.6}
+    .search{display:flex;gap:10px;max-width:680px;margin:28px auto 0}.search input{flex:1;min-width:0;border:1px solid #334155;background:#020617;color:#fff;border-radius:14px;padding:13px 14px;font:inherit;outline:none}.search input:focus{border-color:#60a5fa;box-shadow:0 0 0 3px #2563eb22}
+    .note{text-align:center;color:#64748b;font-size:13px;margin-top:12px}.status{text-align:center;min-height:25px;color:#cbd5e1;font-weight:800;margin:18px 0}
+    .results{display:none;padding:8px 0 60px}.scorecard{display:grid;grid-template-columns:260px 1fr;gap:18px}.scorebox,.panel{background:linear-gradient(180deg,#0f172af2,#111827e8);border:1px solid var(--line);border-radius:24px;box-shadow:0 22px 80px #0005}.scorebox{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center}.ring{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) 0deg,#1f2937 0deg);position:relative}.ring:before{content:"";position:absolute;inset:12px;background:#0b1220;border-radius:50%}.score{position:relative;font-size:46px;font-weight:950;letter-spacing:-.05em}.scorebox h2{margin:20px 0 6px}.scorebox p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}.panel{overflow:hidden}.panelhead{padding:20px 22px;border-bottom:1px solid var(--line)}.panelhead h2{margin:0 0 5px}.panelhead p{margin:0;color:var(--muted);font-size:14px}.checks{display:grid}.check{display:grid;grid-template-columns:34px 1fr auto;align-items:start;gap:12px;padding:15px 20px;border-bottom:1px solid #1f2937}.check:last-child{border-bottom:0}.icon{font-weight:950;font-size:18px}.pass .icon{color:var(--green)}.fail .icon{color:var(--red)}.check strong{display:block;margin-bottom:4px}.check small{color:var(--muted);line-height:1.45}.point{font-size:12px;font-weight:900;color:#64748b;padding-top:4px}
+    .actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}.explain{margin:20px 0 60px;padding:22px;border:1px solid var(--line);border-radius:20px;background:#0f172a99;color:var(--muted);line-height:1.65}.explain strong{color:#fff}
+    footer{border-top:1px solid #1f2937;color:#64748b;text-align:center;padding:28px 0 40px}@media(max-width:760px){.scorecard{grid-template-columns:1fr}.search{flex-direction:column}.check{grid-template-columns:30px 1fr}.point{display:none}}
+  </style>
+</head>
+<body>
+<div class="wrap"><nav><a class="brand" href="./">GitHub Profile Booster 🚀</a><div><a class="btn" href="./generator.html">README Generator</a> <a class="btn light" href="https://github.com/tec-2022/github-profile-booster">⭐ Star</a></div></nav></div>
+<header class="wrap">
+  <span class="eyebrow">🔎 Public README audit</span>
+  <h1>How strong is your GitHub profile?</h1>
+  <p class="lead">Enter a GitHub username. The audit reads only the public profile README and checks ten practical signals that make a profile easier to understand.</p>
+  <div class="search"><input id="username" autocomplete="off" placeholder="GitHub username" aria-label="GitHub username"><button class="btn primary" id="auditBtn">Audit profile</button></div>
+  <p class="note">Public data only · Nothing is uploaded or stored · This is a heuristic, not a hiring score</p>
+</header>
+<main class="wrap">
+  <div class="status" id="status"></div>
+  <section class="results" id="results">
+    <div class="scorecard">
+      <aside class="scorebox"><div class="ring" id="ring"><span class="score" id="score">0/10</span></div><h2 id="rating">Profile score</h2><p id="summary"></p></aside>
+      <div class="panel"><div class="panelhead"><h2>What the audit found</h2><p>Each signal is worth one point.</p></div><div class="checks" id="checks"></div></div>
+    </div>
+    <div class="actions"><a class="btn primary" href="./generator.html">✨ Improve it with the generator</a><a class="btn" id="profileLink" href="#" target="_blank" rel="noopener">Open GitHub profile</a><a class="btn light" href="https://github.com/tec-2022/github-profile-booster">⭐ Save this tool</a></div>
+  </section>
+  <div class="explain"><strong>What this score means:</strong> it measures clarity signals in a public profile README — not programming ability. A short, focused README can score better than a huge one. The goal is to help visitors quickly answer: who are you, what do you build, what stack do you use, and where is the proof?</div>
+</main>
+<footer class="wrap">GitHub Profile Booster · Free and open source · MIT License</footer>
+<script>
+const $=id=>document.getElementById(id);
+const tests=[
+  {name:'Profile README exists',tip:'Create the special public repository that has exactly the same name as your GitHub username.',run:(m,r)=>r.length>20},
+  {name:'Clear introduction',tip:'Open with your name or a concise “Hi, I’m …” introduction.',run:m=>/(^|\n)#{1,3}\s*(hi|hello|hola|hey|about|sobre|i'm|i am|soy)|hi[,! ]|hello[,! ]|hola[,! ]/im.test(m)},
+  {name:'Purpose or positioning',tip:'Add one sentence explaining what you build, study or focus on.',run:m=>m.replace(/<[^>]+>/g,'').length>180},
+  {name:'Readable structure',tip:'Use headings so visitors can scan your profile instead of reading one large block.',run:m=>(m.match(/^#{2,4}\s+/gm)||[]).length>=2},
+  {name:'Technology stack',tip:'Show a focused set of technologies you actually use.',run:m=>/(skillicons|shields\.io|tech stack|stack|technologies|skills|herramientas|tecnolog)/i.test(m)},
+  {name:'Proof of work',tip:'Feature at least one project or repository and explain what it demonstrates.',run:m=>/(projects?|repositor|portfolio|featured|work|proyectos?|trabajo)/i.test(m)&&/(github\.com\/[^\s)]+\/[^\s)]+)/i.test(m)},
+  {name:'Useful external link',tip:'Add a portfolio, LinkedIn, ORCID, personal site or another relevant public link.',run:m=>/(linkedin\.com|orcid\.org|https?:\/\/[^\s)]+\.[a-z]{2,})/i.test(m)},
+  {name:'Visual hierarchy',tip:'A small banner, stack icons or a few purposeful badges can improve scanning.',run:m=>/(<img|!\[|shields\.io|skillicons\.dev|capsule-render)/i.test(m)},
+  {name:'Current-focus signal',tip:'Mention what you are currently building, learning or exploring.',run:m=>/(currently|current focus|working on|learning|building|exploring|actualmente|aprendiendo|trabajando|construyendo)/i.test(m)},
+  {name:'Reason to continue',tip:'Give visitors a next step: see a project, visit your portfolio, connect, contribute or contact you.',run:m=>/(connect|contact|portfolio|featured|check out|contribute|reach me|ver proyecto|contacto|conecta|portafolio)/i.test(m)}
+];
+async function loadReadme(u){const clean=u.trim().replace(/^@/,'');if(!/^[A-Za-z0-9-]{1,39}$/.test(clean))throw new Error('Enter a valid GitHub username.');const urls=[`https://raw.githubusercontent.com/${clean}/${clean}/HEAD/README.md`,`https://raw.githubusercontent.com/${clean}/${clean}/main/README.md`,`https://raw.githubusercontent.com/${clean}/${clean}/master/README.md`];for(const url of urls){try{const r=await fetch(url,{cache:'no-store'});if(r.ok){const text=await r.text();if(text.trim())return {text,user:clean};}}catch(e){}}throw new Error(`No public profile README found for @${clean}.`)}
+function renderAudit(markdown,user){const results=tests.map(t=>({ ...t,pass:Boolean(t.run(markdown,markdown)) }));const total=results.filter(x=>x.pass).length;$('score').textContent=`${total}/10`;$('ring').style.background=`conic-gradient(${total>=8?'var(--green)':total>=5?'var(--amber)':'var(--red)'} ${total*36}deg,#1f2937 0deg)`;$('rating').textContent=total>=9?'Excellent foundation':total>=7?'Strong profile':total>=5?'Good start':'Needs a clearer story';$('summary').textContent=total>=8?'Your README communicates most of the essentials clearly. Polish the missing signals and keep your featured work current.':total>=5?'You already have useful pieces. Focus on the failed checks to make the first impression easier to scan.':'Start with identity, focus, stack and one proof-of-work project. The generator can build that base quickly.';$('checks').innerHTML=results.map(x=>`<div class="check ${x.pass?'pass':'fail'}"><div class="icon">${x.pass?'✓':'×'}</div><div><strong>${x.name}</strong><small>${x.pass?'Detected in your public README.':x.tip}</small></div><div class="point">${x.pass?'+1':'0'}</div></div>`).join('');$('profileLink').href=`https://github.com/${user}`;$('results').style.display='block';$('results').scrollIntoView({behavior:'smooth',block:'start'})}
+async function audit(){const u=$('username').value;$('status').textContent='Checking the public profile README…';$('results').style.display='none';try{const {text,user}=await loadReadme(u);renderAudit(text,user);$('status').textContent=`Audit complete for @${user}.`;}catch(e){$('status').textContent=e.message;}}
+$('auditBtn').addEventListener('click',audit);$('username').addEventListener('keydown',e=>{if(e.key==='Enter')audit()});
+</script>
+</body>
+</html>
