@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Career Signal Map — GitHub Profile Booster</title>
+  <meta name="description" content="See which career direction your public GitHub repositories currently support most strongly." />
+  <meta name="theme-color" content="#020617" />
+  <style>
+    :root{color-scheme:dark;--bg:#020617;--panel:#0f172a;--line:#263244;--text:#f8fafc;--muted:#94a3b8;--green:#4ade80;--blue:#38bdf8;--violet:#a78bfa;--amber:#fbbf24}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 85% 0%,#1d4ed833,transparent 32%),radial-gradient(circle at 5% 95%,#7c3aed2b,transparent 30%),var(--bg);color:var(--text)}a{color:inherit}.wrap{width:min(1060px,calc(100% - 28px));margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:10px}.brand{font-weight:900;text-decoration:none}.btn{border:1px solid #334155;background:#111827;color:#fff;border-radius:12px;min-height:42px;padding:0 14px;font:inherit;font-weight:850;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.btn.primary{background:linear-gradient(135deg,#2563eb,#7c3aed);border-color:transparent}.btn.light{background:#f8fafc;color:#020617;border-color:#f8fafc}
+    header{text-align:center;padding:58px 0 32px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:#0f172ab3;color:#bfdbfe;font-size:13px;font-weight:900}h1{font-size:clamp(40px,7vw,72px);line-height:.96;letter-spacing:-.055em;margin:18px auto 14px;max-width:950px}.lead{max-width:760px;margin:auto;color:var(--muted);font-size:19px;line-height:1.62}.search{display:flex;gap:10px;max-width:680px;margin:28px auto 0}.search input{flex:1;min-width:0;border:1px solid #334155;background:#020617;color:#fff;border-radius:14px;padding:13px 14px;font:inherit}.note{text-align:center;color:#64748b;font-size:13px;margin-top:12px}.status{text-align:center;min-height:24px;color:#cbd5e1;font-weight:800;margin:18px 0}
+    .results{display:none;padding:8px 0 62px}.hero{display:grid;grid-template-columns:300px 1fr;gap:18px}.card{background:linear-gradient(180deg,#0f172af3,#111827e8);border:1px solid var(--line);border-radius:24px;box-shadow:0 22px 80px #0005}.winner{padding:28px;text-align:center;display:flex;flex-direction:column;justify-content:center}.winner .icon{font-size:42px}.winner h2{font-size:30px;letter-spacing:-.04em;margin:10px 0 6px}.winner .big{font-size:48px;font-weight:950;letter-spacing:-.05em;margin:5px 0}.winner p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}.panelhead{padding:20px 22px;border-bottom:1px solid var(--line)}.panelhead h2{margin:0 0 5px}.panelhead p{margin:0;color:var(--muted);font-size:14px}.tracks{padding:18px;display:grid;gap:12px}.track{display:grid;grid-template-columns:125px 1fr 52px;align-items:center;gap:12px}.track strong{font-size:14px}.track span{text-align:right;font-size:13px;font-weight:900;color:#cbd5e1}.bar{height:11px;background:#1f2937;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#38bdf8,#8b5cf6)}
+    .section{margin-top:18px}.section h2{font-size:24px;letter-spacing:-.03em;margin:0 0 12px}.evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.lane{padding:20px}.lane .tag{display:inline-flex;padding:6px 9px;border-radius:999px;background:#1e293b;color:#c4b5fd;font-size:12px;font-weight:900;margin-bottom:12px}.lane h3{margin:0 0 12px}.repo{padding:11px 0;border-top:1px solid #263244}.repo:first-of-type{border-top:0}.repo a{font-weight:900;text-decoration:none}.repo small{display:block;color:var(--muted);margin-top:4px;line-height:1.4}.insight{padding:22px;color:var(--muted);line-height:1.65}.insight strong{color:#fff}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}footer{border-top:1px solid #1f2937;color:#64748b;text-align:center;padding:28px 0 42px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.evidence{grid-template-columns:1fr}.search{flex-direction:column}.track{grid-template-columns:100px 1fr 45px}}
+  </style>
+</head>
+<body>
+<div class="wrap"><nav><a class="brand" href="./">GitHub Profile Booster 🚀</a><div><a class="btn" href="./optimizer.html">Goal Optimizer</a> <a class="btn light" href="https://github.com/tec-2022/github-profile-booster">⭐ Star</a></div></nav></div>
+<header class="wrap">
+  <span class="eyebrow">🧭 Career Signal Map</span>
+  <h1>What does your GitHub currently say you are?</h1>
+  <p class="lead">Your intended career direction and your visible GitHub evidence are not always the same. This map compares your public repositories across six paths at once.</p>
+  <div class="search"><input id="username" autocomplete="off" placeholder="GitHub username" aria-label="GitHub username"><button class="btn primary" id="runBtn">Map my signals</button></div>
+  <p class="note">Public repositories only · No login · No API key · This is a heuristic evidence map, not career advice</p>
+</header>
+<main class="wrap">
+  <div class="status" id="status"></div>
+  <section class="results" id="results">
+    <div class="hero">
+      <aside class="card winner"><div class="icon">🧭</div><h2>Strongest current signal</h2><div class="big" id="winnerName">—</div><p id="winnerText"></p></aside>
+      <div class="card"><div class="panelhead"><h2>Career evidence map</h2><p>Scores compare your repositories with goal-relevant languages, topics, descriptions and recent activity.</p></div><div class="tracks" id="tracks"></div></div>
+    </div>
+    <div class="section"><h2>Evidence behind your top signals</h2><div class="evidence" id="evidence"></div></div>
+    <div class="section card insight" id="insight"></div>
+    <div class="actions"><a class="btn primary" href="./optimizer.html">🎯 Optimize for a chosen goal</a><a class="btn" href="./audit.html">🔎 Audit README</a><a class="btn light" href="https://github.com/tec-2022/github-profile-booster">⭐ Save this tool</a></div>
+  </section>
+</main>
+<footer class="wrap">GitHub Profile Booster · Evidence-first profile tooling · MIT License</footer>
+<script>
+const $=id=>document.getElementById(id);
+const tracks={
+  frontend:{label:'Frontend',langs:['JavaScript','TypeScript','HTML','CSS','Vue','Svelte'],keys:['react','next','vue','svelte','frontend','ui','ux','tailwind','web']},
+  backend:{label:'Backend',langs:['Python','Java','Go','C#','PHP','Ruby','Kotlin','Rust','TypeScript','JavaScript'],keys:['api','backend','server','database','postgres','mysql','node','express','fastapi','django','spring','.net']},
+  fullstack:{label:'Full Stack',langs:['TypeScript','JavaScript','Python','C#','Java','PHP'],keys:['fullstack','full-stack','react','next','api','database','supabase','node','web']},
+  data:{label:'Data / AI',langs:['Python','Jupyter Notebook','R','Julia'],keys:['data','ai','machine learning','ml','analytics','model','notebook','pandas','numpy','tensorflow','pytorch','statistics']},
+  opensource:{label:'Open Source',langs:[],keys:['open source','opensource','library','tool','cli','sdk','package','framework']},
+  academic:{label:'Academic',langs:['Python','R','Jupyter Notebook','MATLAB','Julia'],keys:['research','paper','analysis','dataset','simulation','thesis','academic','experiment']}
+};
+function days(d){return Math.max(0,(Date.now()-new Date(d).getTime())/86400000)}
+function repoText(r){return `${r.name||''} ${r.description||''} ${(r.topics||[]).join(' ')} ${r.language||''}`.toLowerCase()}
+function repoTrackScore(r,t){const c=tracks[t],txt=repoText(r);let s=0;if(c.langs.length&&c.langs.includes(r.language))s+=34;if(!c.langs.length)s+=10;s+=Math.min(30,c.keys.filter(k=>txt.includes(k)).length*8);if(r.description)s+=9;if((r.topics||[]).length)s+=Math.min(7,r.topics.length*2);const age=days(r.pushed_at);s+=age<90?20:age<180?15:age<365?10:age<730?4:0;return Math.min(100,s)}
+function laneScore(repos,t){const ranked=repos.map(r=>({r,s:repoTrackScore(r,t)})).sort((a,b)=>b.s-a.s);const top=ranked.slice(0,4);if(!top.length)return {score:0,top:[]};const base=top.reduce((a,x,i)=>a+x.s*[.4,.3,.2,.1][i],0);const depth=Math.min(12,repos.filter(r=>repoTrackScore(r,t)>=45).length*3);return {score:Math.min(100,Math.round(base+depth)),top:ranked.slice(0,2)}}
+async function api(url){const r=await fetch(url,{headers:{Accept:'application/vnd.github+json'}});if(!r.ok){if(r.status===403)throw new Error('GitHub API rate limit reached. Try again later.');if(r.status===404)throw new Error('GitHub user not found.');throw new Error(`GitHub API error (${r.status}).`)}return r.json()}
+function render(user,repos){const lanes=Object.keys(tracks).map(k=>({key:k,...laneScore(repos,k)})).sort((a,b)=>b.score-a.score);const best=lanes[0],second=lanes[1];$('winnerName').textContent=tracks[best.key].label;$('winnerText').textContent=`${best.score}/100 public evidence signal. Your next strongest lane is ${tracks[second.key].label} at ${second.score}/100.`;$('tracks').innerHTML=lanes.map(x=>`<div class="track"><strong>${tracks[x.key].label}</strong><div class="bar"><i style="width:${x.score}%"></i></div><span>${x.score}</span></div>`).join('');$('evidence').innerHTML=lanes.slice(0,3).map(x=>`<article class="card lane"><span class="tag">${x.score}/100 signal</span><h3>${tracks[x.key].label}</h3>${x.top.map(y=>`<div class="repo"><a href="${y.r.html_url}" target="_blank" rel="noopener">${y.r.name}</a><small>${y.r.description||'No description'} · ${y.r.language||'Mixed'} · repo signal ${y.s}/100</small></div>`).join('')}</article>`).join('');const gap=best.score-second.score;$('insight').innerHTML=gap>=18?`<strong>Your public GitHub has a clear ${tracks[best.key].label} signal.</strong> If that is your intended direction, reinforce it by featuring the strongest repos and improving their documentation. If it is not your intended direction, your profile currently communicates a different story than the one you want.`:`<strong>Your profile is multidisciplinary.</strong> ${tracks[best.key].label} and ${tracks[second.key].label} evidence are relatively close. That can be an advantage, but your README should explicitly choose which story comes first for the audience you care about.`;$('results').style.display='block';$('results').scrollIntoView({behavior:'smooth',block:'start'})}
+async function run(){const u=$('username').value.trim().replace(/^@/,'');if(!/^[A-Za-z0-9-]{1,39}$/.test(u)){$('status').textContent='Enter a valid GitHub username.';return}$('results').style.display='none';$('status').textContent='Reading public repositories…';try{const [user,repos]=await Promise.all([api(`https://api.github.com/users/${u}`),api(`https://api.github.com/users/${u}/repos?per_page=100&sort=updated`)]);const own=repos.filter(r=>!r.fork&&!r.archived);if(!own.length)throw new Error('No original public repositories were found to map.');render(user,own);$('status').textContent=`Career signal map complete for @${u}.`;}catch(e){$('status').textContent=e.message}}
+$('runBtn').addEventListener('click',run);$('username').addEventListener('keydown',e=>{if(e.key==='Enter')run()});
+</script>
+</body>
+</html>
