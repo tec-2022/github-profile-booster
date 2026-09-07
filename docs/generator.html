@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Profile README Generator — GitHub Profile Booster</title>
+  <meta name="description" content="Generate a clean GitHub profile README in your browser. No signup, no backend, no private code." />
+  <meta property="og:title" content="Free GitHub Profile README Generator" />
+  <meta property="og:description" content="Fill a few fields, preview your Markdown, copy or download README.md." />
+  <meta name="theme-color" content="#020617" />
+  <style>
+    :root{color-scheme:dark;--bg:#020617;--panel:#0f172a;--panel2:#111827;--line:#263244;--text:#f8fafc;--muted:#94a3b8;--blue:#38bdf8;--violet:#a78bfa;--green:#4ade80;--danger:#fb7185}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 90% 0%,#1d4ed833,transparent 30%),radial-gradient(circle at 0% 100%,#7c3aed2b,transparent 28%),var(--bg);color:var(--text)}
+    a{color:inherit}.wrap{width:min(1220px,calc(100% - 28px));margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px}.brand{font-weight:900;text-decoration:none;letter-spacing:-.03em}.nav-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{border:1px solid #334155;background:#111827;color:#fff;border-radius:12px;min-height:42px;padding:0 14px;font:inherit;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.btn:hover{border-color:#64748b}.btn.primary{background:linear-gradient(135deg,#2563eb,#7c3aed);border-color:transparent}.btn.light{background:#f8fafc;color:#020617;border-color:#f8fafc}
+    header{text-align:center;padding:52px 0 34px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--line);background:#0f172ab3;border-radius:999px;color:#bfdbfe;font-size:13px;font-weight:900}h1{font-size:clamp(38px,7vw,70px);letter-spacing:-.055em;line-height:.96;margin:18px auto 14px;max-width:920px}.lead{max-width:760px;margin:auto;color:var(--muted);font-size:clamp(17px,2vw,21px);line-height:1.6}.privacy{margin-top:13px;color:#64748b;font-size:13px}
+    .builder{display:grid;grid-template-columns:minmax(320px,.92fr) minmax(0,1.08fr);gap:18px;padding:16px 0 60px}.panel{background:linear-gradient(180deg,#0f172af2,#111827e8);border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 90px #0006;overflow:hidden}.panel-head{padding:20px 22px;border-bottom:1px solid var(--line)}.panel-head h2{margin:0 0 4px;font-size:20px}.panel-head p{margin:0;color:var(--muted);font-size:14px}.panel-body{padding:20px 22px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:7px;margin-bottom:13px}.field label{font-size:13px;font-weight:800;color:#cbd5e1}.field small{color:#64748b}.field input,.field textarea,.field select{width:100%;border:1px solid #334155;background:#020617;color:#f8fafc;border-radius:12px;padding:11px 12px;font:inherit;outline:none}.field textarea{min-height:84px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#60a5fa;box-shadow:0 0 0 3px #2563eb22}.section-label{margin:20px 0 11px;padding-top:17px;border-top:1px solid #1f2937;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#64748b;font-weight:900}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{position:relative}.chip input{position:absolute;opacity:0;pointer-events:none}.chip label{display:inline-flex;padding:8px 10px;border:1px solid #334155;border-radius:999px;background:#0b1220;color:#cbd5e1;font-size:13px;font-weight:800;cursor:pointer}.chip input:checked+label{background:#1d4ed833;border-color:#60a5fa;color:#dbeafe}
+    .preview-actions{display:flex;gap:8px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--line)}.status{min-height:20px;color:var(--green);font-size:13px;font-weight:800;padding:0 18px}.code{margin:0;padding:20px;white-space:pre-wrap;word-break:break-word;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#dbeafe;background:#020617;min-height:660px;max-height:820px;overflow:auto}
+    .tips{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-bottom:64px}.tip{border:1px solid var(--line);border-radius:18px;padding:18px;background:#0f172a99}.tip strong{display:block;margin-bottom:7px}.tip p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
+    footer{border-top:1px solid #1f2937;text-align:center;color:#64748b;padding:28px 0 40px}
+    @media(max-width:900px){.builder{grid-template-columns:1fr}.code{min-height:480px}.tips{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.nav-actions .secondary{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./">GitHub Profile Booster 🚀</a>
+      <div class="nav-actions">
+        <a class="btn secondary" href="https://github.com/tec-2022/github-profile-booster">Repository</a>
+        <a class="btn light" href="https://github.com/tec-2022/github-profile-booster">⭐ Star on GitHub</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="wrap">
+    <span class="eyebrow">⚡ Free browser-based builder</span>
+    <h1>Generate your GitHub profile README.</h1>
+    <p class="lead">Fill in a few fields, choose your stack and get clean Markdown you can copy or download as <code>README.md</code>.</p>
+    <p class="privacy">Your data stays in your browser · No account · No backend · No API key</p>
+  </header>
+
+  <main class="wrap">
+    <section class="builder">
+      <div class="panel">
+        <div class="panel-head"><h2>1. Tell us what to show</h2><p>Use only information you are comfortable publishing publicly.</p></div>
+        <div class="panel-body">
+          <div class="grid2">
+            <div class="field"><label for="name">Name</label><input id="name" value="Your Name" /></div>
+            <div class="field"><label for="username">GitHub username</label><input id="username" placeholder="octocat" /></div>
+          </div>
+          <div class="field"><label for="headline">Headline</label><input id="headline" value="Student developer · Web · Data · AI" /></div>
+          <div class="field"><label for="bio">Short bio</label><textarea id="bio">I build useful web applications and enjoy turning ideas into clear, practical software.</textarea></div>
+          <div class="grid2">
+            <div class="field"><label for="location">Location</label><input id="location" placeholder="City, Country" /></div>
+            <div class="field"><label for="style">Style</label><select id="style"><option value="clean">Clean</option><option value="visual">Visual</option><option value="minimal">Minimal</option></select></div>
+          </div>
+
+          <div class="section-label">Stack</div>
+          <div class="chips" id="stackChips">
+            <div class="chip"><input type="checkbox" id="ts" value="TypeScript" data-icon="ts" checked><label for="ts">TypeScript</label></div>
+            <div class="chip"><input type="checkbox" id="js" value="JavaScript" data-icon="js" checked><label for="js">JavaScript</label></div>
+            <div class="chip"><input type="checkbox" id="react" value="React" data-icon="react" checked><label for="react">React</label></div>
+            <div class="chip"><input type="checkbox" id="nextjs" value="Next.js" data-icon="nextjs"><label for="nextjs">Next.js</label></div>
+            <div class="chip"><input type="checkbox" id="node" value="Node.js" data-icon="nodejs"><label for="node">Node.js</label></div>
+            <div class="chip"><input type="checkbox" id="py" value="Python" data-icon="py"><label for="py">Python</label></div>
+            <div class="chip"><input type="checkbox" id="cs" value="C#" data-icon="cs"><label for="cs">C#</label></div>
+            <div class="chip"><input type="checkbox" id="dotnet" value=".NET" data-icon="dotnet"><label for="dotnet">.NET</label></div>
+            <div class="chip"><input type="checkbox" id="go" value="Go" data-icon="go"><label for="go">Go</label></div>
+            <div class="chip"><input type="checkbox" id="postgres" value="PostgreSQL" data-icon="postgres"><label for="postgres">PostgreSQL</label></div>
+            <div class="chip"><input type="checkbox" id="supabase" value="Supabase" data-icon="supabase"><label for="supabase">Supabase</label></div>
+            <div class="chip"><input type="checkbox" id="docker" value="Docker" data-icon="docker"><label for="docker">Docker</label></div>
+            <div class="chip"><input type="checkbox" id="vercel" value="Vercel" data-icon="vercel"><label for="vercel">Vercel</label></div>
+            <div class="chip"><input type="checkbox" id="tailwind" value="Tailwind CSS" data-icon="tailwind"><label for="tailwind">Tailwind</label></div>
+          </div>
+
+          <div class="section-label">Proof of work</div>
+          <div class="grid2">
+            <div class="field"><label for="repo">Featured repository</label><input id="repo" placeholder="project-name" /></div>
+            <div class="field"><label for="repoUrl">Project URL</label><input id="repoUrl" placeholder="https://github.com/user/project" /></div>
+          </div>
+          <div class="field"><label for="repoDesc">What does it prove?</label><input id="repoDesc" placeholder="A short, outcome-focused project description." /></div>
+
+          <div class="section-label">Links</div>
+          <div class="grid2">
+            <div class="field"><label for="portfolio">Portfolio</label><input id="portfolio" placeholder="https://..." /></div>
+            <div class="field"><label for="linkedin">LinkedIn</label><input id="linkedin" placeholder="https://linkedin.com/in/..." /></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>2. Copy your README</h2><p>Preview updates as you type.</p></div>
+        <div class="preview-actions">
+          <button class="btn primary" id="copyBtn">Copy Markdown</button>
+          <button class="btn" id="downloadBtn">Download README.md</button>
+          <button class="btn" id="resetBtn">Reset</button>
+        </div>
+        <div class="status" id="status" aria-live="polite"></div>
+        <pre class="code" id="output"></pre>
+      </div>
+    </section>
+
+    <section class="tips">
+      <div class="tip"><strong>Keep the first screen useful</strong><p>Name, focus, stack and one proof-of-work link beat a giant wall of badges.</p></div>
+      <div class="tip"><strong>Use real technologies</strong><p>Show tools you can discuss confidently. A focused stack is more credible than every logo you have seen.</p></div>
+      <div class="tip"><strong>Publish safely</strong><p>Never expose secrets, private URLs, personal data or code you do not have permission to publish.</p></div>
+    </section>
+  </main>
+
+  <footer class="wrap">Built into GitHub Profile Booster · Open source · MIT License</footer>
+
+<script>
+  const $ = id => document.getElementById(id);
+  const fields = ['name','username','headline','bio','location','style','repo','repoUrl','repoDesc','portfolio','linkedin'];
+  const defaults = {};
+  fields.forEach(id => defaults[id] = $(id).value);
+
+  const esc = s => String(s || '').replace(/[<>]/g, '');
+  const selectedStack = () => [...document.querySelectorAll('#stackChips input:checked')].map(x => ({name:x.value, icon:x.dataset.icon}));
+
+  function linksLine() {
+    const items = [];
+    const p = $('portfolio').value.trim();
+    const l = $('linkedin').value.trim();
+    const u = $('username').value.trim();
+    if (p) items.push(`[Portfolio](${p})`);
+    if (l) items.push(`[LinkedIn](${l})`);
+    if (u) items.push(`[GitHub](https://github.com/${u})`);
+    return items.join(' · ');
+  }
+
+  function buildMarkdown() {
+    const name = esc($('name').value.trim() || 'Your Name');
+    const headline = esc($('headline').value.trim());
+    const bio = esc($('bio').value.trim());
+    const location = esc($('location').value.trim());
+    const style = $('style').value;
+    const stack = selectedStack();
+    const repo = esc($('repo').value.trim());
+    const repoUrl = $('repoUrl').value.trim();
+    const repoDesc = esc($('repoDesc').value.trim());
+    const links = linksLine();
+    const lines = [];
+
+    if (style === 'visual') {
+      lines.push(`<p align="center">`);
+      lines.push(`  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:7c3aed&height=180&section=header&text=${encodeURIComponent(name)}&fontColor=ffffff&fontSize=42&fontAlignY=35" width="100%" alt="Profile banner" />`);
+      lines.push(`</p>`, '');
+    }
+
+    lines.push(`# Hi, I'm ${name} 👋`, '');
+    if (headline) lines.push(`**${headline}**`, '');
+    if (location) lines.push(`📍 ${location}`, '');
+    if (bio) lines.push(bio, '');
+    if (links) lines.push(links, '');
+
+    if (stack.length) {
+      lines.push('## Tech stack', '');
+      if (style === 'minimal') {
+        lines.push(stack.map(x => `\`${x.name}\``).join(' · '), '');
+      } else {
+        lines.push(`<p align="left">`, `  <img src="https://skillicons.dev/icons?i=${stack.map(x => x.icon).join(',')}" alt="${stack.map(x => x.name).join(', ')}" />`, `</p>`, '');
+      }
+    }
+
+    if (repo || repoUrl || repoDesc) {
+      lines.push('## Featured project', '');
+      const title = repo || 'Project';
+      lines.push(repoUrl ? `### [${title}](${repoUrl})` : `### ${title}`);
+      if (repoDesc) lines.push(repoDesc);
+      lines.push('');
+    }
+
+    lines.push('## What I am working on', '', '- Building useful projects.', '- Improving my software engineering skills.', '- Learning in public and documenting what I build.', '');
+    lines.push('---', '', '<sub>Profile README generated with [GitHub Profile Booster](https://github.com/tec-2022/github-profile-booster).</sub>');
+    return lines.join('\n');
+  }
+
+  function render(){ $('output').textContent = buildMarkdown(); }
+  document.querySelectorAll('input,textarea,select').forEach(el => el.addEventListener('input', render));
+  document.querySelectorAll('#stackChips input').forEach(el => el.addEventListener('change', render));
+
+  $('copyBtn').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(buildMarkdown()); $('status').textContent = '✓ Markdown copied to clipboard.'; }
+    catch { $('status').textContent = 'Copy failed — select the preview text manually.'; }
+    setTimeout(() => $('status').textContent = '', 2600);
+  });
+
+  $('downloadBtn').addEventListener('click', () => {
+    const blob = new Blob([buildMarkdown()], {type:'text/markdown;charset=utf-8'});
+    const url = URL.createObjectURL(blob); const a = document.createElement('a');
+    a.href = url; a.download = 'README.md'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    $('status').textContent = '✓ README.md downloaded.'; setTimeout(() => $('status').textContent = '', 2600);
+  });
+
+  $('resetBtn').addEventListener('click', () => {
+    fields.forEach(id => $(id).value = defaults[id]);
+    document.querySelectorAll('#stackChips input').forEach(x => x.checked = ['ts','js','react'].includes(x.id));
+    render();
+  });
+
+  render();
+</script>
+</body>
+</html>
