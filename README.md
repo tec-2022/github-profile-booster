@@ -7,6 +7,7 @@
 <p align="center">
   <a href="https://github.com/tec-2022/github-profile-booster/stargazers"><img src="https://img.shields.io/github/stars/tec-2022/github-profile-booster?style=for-the-badge&logo=github&label=Stars" alt="GitHub stars" /></a>
   <a href="https://github.com/tec-2022/github-profile-booster/network/members"><img src="https://img.shields.io/github/forks/tec-2022/github-profile-booster?style=for-the-badge&logo=github&label=Forks" alt="GitHub forks" /></a>
+  <a href="https://github.com/tec-2022/github-profile-booster/actions/workflows/quality.yml"><img src="https://img.shields.io/github/actions/workflow/status/tec-2022/github-profile-booster/quality.yml?branch=main&style=for-the-badge&label=Quality" alt="Quality checks" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/tec-2022/github-profile-booster?style=for-the-badge" alt="MIT license" /></a>
   <a href="https://github.com/tec-2022/github-profile-booster/commits/main"><img src="https://img.shields.io/github/last-commit/tec-2022/github-profile-booster?style=for-the-badge" alt="Last commit" /></a>
 </p>
@@ -50,6 +51,8 @@ It answers:
 
 You get a comparative signal map plus the repositories that contribute most strongly to your top directions.
 
+Results are now **shareable by URL** and can be exported as a **1200×630 PNG signal card** for social posts, portfolios or feedback threads.
+
 **[Open the Career Signal Map →](https://tec-2022.github.io/github-profile-booster/career-map.html)**
 
 ---
@@ -75,6 +78,10 @@ The optimizer then:
 3. **Checks whether the selected repos are documented and current.**
 4. **Prioritizes the highest-impact fixes** rather than returning a generic checklist.
 5. **Generates an evidence-based profile README draft** using only public work it actually found.
+6. **Creates a reproducible result URL** with the username and selected goal.
+7. **Exports a social result card** summarizing the score, dimensions and strongest evidence.
+
+Repeated public GitHub API requests are cached locally for a short period to reduce unnecessary calls and make repeated analysis smoother.
 
 **[Open the Goal-Aware Optimizer →](https://tec-2022.github.io/github-profile-booster/optimizer.html)**
 
@@ -175,6 +182,7 @@ Are the featured repositories documented, maintained and supported by visible pu
 | Decorative badges without context | Evidence-linked project descriptions |
 | “My profile is 7/10” | “These are the fixes with the highest impact.” |
 | README written from memory | Draft based on public repositories actually found |
+| Screenshot-only result | Reproducible URL + downloadable social card |
 
 <p align="center">
   <img src="./assets/preview.svg" width="100%" alt="GitHub Profile Booster workflow" />
@@ -186,17 +194,32 @@ Are the featured repositories documented, maintained and supported by visible pu
 
 | Resource | What it does |
 | --- | --- |
-| [Career Signal Map](https://tec-2022.github.io/github-profile-booster/career-map.html) | Compare multiple career directions from the same public GitHub evidence |
-| [Goal-Aware Optimizer](https://tec-2022.github.io/github-profile-booster/optimizer.html) | Career-goal analysis, repo ranking, prioritized fixes and evidence-based draft |
+| [Career Signal Map](https://tec-2022.github.io/github-profile-booster/career-map.html) | Compare multiple career directions and export a shareable signal card |
+| [Goal-Aware Optimizer](https://tec-2022.github.io/github-profile-booster/optimizer.html) | Career-goal analysis, repo ranking, prioritized fixes, shareable results and evidence-based draft |
 | [Quick Profile Audit](https://tec-2022.github.io/github-profile-booster/audit.html) | 10-signal public README heuristic |
 | [README Generator](https://tec-2022.github.io/github-profile-booster/generator.html) | Browser-based Markdown builder with copy/download |
+| [Community Showcase](https://tec-2022.github.io/github-profile-booster/showcase.html) | Public entry point for real before/after examples |
 | [`templates/`](./templates) | 60-second, Pro, Minimal and Bilingual templates |
 | [`docs/profile-scorecard.md`](./docs/profile-scorecard.md) | Manual 10-point audit |
 | [`docs/profile-checklist.md`](./docs/profile-checklist.md) | Pre-publish quality control |
 | [`docs/badges.md`](./docs/badges.md) | Focused stack and profile badge snippets |
 | [`docs/public-repo-ideas.md`](./docs/public-repo-ideas.md) | Safe public-project ideas |
 | [`docs/launch-plan.md`](./docs/launch-plan.md) | Make a public repository easier to understand and share |
-| [`SHOWCASE.md`](./SHOWCASE.md) | Voluntary community examples |
+| [`SHOWCASE.md`](./SHOWCASE.md) | Maintained community showcase list |
+
+---
+
+## Quality and safety
+
+Every push and pull request runs a lightweight GitHub Actions check that validates:
+
+- Required public pages exist.
+- Inline JavaScript parses successfully.
+- Basic page metadata is present.
+- Relative links between local pages resolve.
+- The main README references the flagship tools.
+
+The public pages also escape user-controlled repository text before inserting it into generated HTML views.
 
 ---
 
@@ -224,7 +247,7 @@ The browser tools work with information intended for a public GitHub profile. Ne
 
 ## Community showcase 🌟
 
-Used the toolkit to improve your public profile? Submit it voluntarily to [`SHOWCASE.md`](./SHOWCASE.md).
+Used the toolkit to improve your public profile? Submit it voluntarily to [`SHOWCASE.md`](./SHOWCASE.md) or browse the [Showcase page](https://tec-2022.github.io/github-profile-booster/showcase.html).
 
 The goal is to build a library of **real profiles with different objectives**, not make everyone look identical.
 
