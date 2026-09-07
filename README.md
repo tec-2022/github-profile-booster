@@ -5,107 +5,179 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/README-template-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="README template" />
-  <img src="https://img.shields.io/badge/profile-badges-2563eb?style=for-the-badge&logo=shieldsdotio&logoColor=white" alt="Profile badges" />
-  <img src="https://img.shields.io/badge/student--friendly-16a34a?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Student friendly" />
-  <img src="https://img.shields.io/badge/no%20private%20code-safe-059669?style=for-the-badge&logo=gitignoredotio&logoColor=white" alt="No private code" />
+  <a href="https://github.com/tec-2022/github-profile-booster/stargazers"><img src="https://img.shields.io/github/stars/tec-2022/github-profile-booster?style=for-the-badge&logo=github&label=Stars" alt="GitHub stars" /></a>
+  <a href="https://github.com/tec-2022/github-profile-booster/network/members"><img src="https://img.shields.io/github/forks/tec-2022/github-profile-booster?style=for-the-badge&logo=github&label=Forks" alt="GitHub forks" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/tec-2022/github-profile-booster?style=for-the-badge" alt="MIT license" /></a>
+  <a href="https://github.com/tec-2022/github-profile-booster/commits/main"><img src="https://img.shields.io/github/last-commit/tec-2022/github-profile-booster?style=for-the-badge" alt="Last commit" /></a>
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick start</a> ·
-  <a href="./templates/profile-readme-pro.md">Pro template</a> ·
-  <a href="./docs/badges.md">Badge catalog</a> ·
-  <a href="./docs/launch-plan.md">Launch plan</a> ·
-  <a href="https://tec-2022.github.io/github-profile-booster/">Live site</a> ·
-  <a href="./docs/es/README.md">Español</a>
+  <strong>Turn a plain GitHub profile into a polished developer landing page in minutes.</strong><br />
+  Free templates, badges, checklists and practical profile ideas for students and junior developers.
 </p>
-
-A practical GitHub profile kit for students and junior developers who want a profile that looks clear, credible and alive without exposing private projects. See the live landing page at https://tec-2022.github.io/github-profile-booster/.
-
-If this helps your profile, consider giving the repo a ⭐ so more students can find it.
 
 <p align="center">
-  <img src="./assets/preview.svg" width="100%" alt="A preview of what the kit helps you build" />
+  <a href="#-60-second-start"><strong>⚡ Start in 60 seconds</strong></a> ·
+  <a href="https://github.com/tec-2022/github-profile-booster/generate"><strong>Use this template</strong></a> ·
+  <a href="https://tec-2022.github.io/github-profile-booster/"><strong>Live site</strong></a> ·
+  <a href="./docs/es/README.md"><strong>Español</strong></a>
 </p>
 
-## Why this exists
+<p align="center">
+  <sub>No signup · No private code required · Copy, customize and publish</sub>
+</p>
 
-Many student GitHub profiles have real effort behind them, but the first impression feels unfinished: plain text, no visual hierarchy, no clear stack and public repos that do not explain their value. This kit fixes that with safe, reusable pieces.
+---
 
-Use it to turn your profile into a small landing page for your learning, your stack and your direction as a developer.
+## Why this repo is worth keeping ⭐
 
-## What is inside?
+Most profile guides tell you what a good GitHub profile should contain. This repo gives you the pieces to build one immediately.
 
-| Area | Files | Use it for |
-| --- | --- | --- |
-| Profile templates | [`templates/`](./templates) | Build a clean profile README quickly. |
-| Badge catalog | [`docs/badges.md`](./docs/badges.md) | Copy badges for languages, frameworks, data and tools. |
-| Profile checklist | [`docs/profile-checklist.md`](./docs/profile-checklist.md) | Audit your profile before sharing it. |
-| Launch plan | [`docs/launch-plan.md`](./docs/launch-plan.md) | Make a public repo more likely to earn stars. |
-| Public repo ideas | [`docs/public-repo-ideas.md`](./docs/public-repo-ideas.md) | Create safe repos without leaking private work. |
-| Examples | [`examples/`](./examples) | See ready-to-copy layouts and sections. |
+You get:
 
-## Quick start
+- **Ready-to-copy profile README templates** instead of starting from a blank page.
+- **A 60-second starter** for people who want the fastest possible setup.
+- **Badge and stack snippets** you can paste directly into Markdown.
+- **A profile quality checklist** to catch weak or unfinished sections.
+- **A profile scorecard** to rate your profile before sharing it.
+- **Safe public-repo ideas** for students who cannot publish private school or client code.
+- **A launch checklist** for making useful public repos easier to understand and star.
 
-1. Create a public repository with the same name as your GitHub username.
-2. Copy [`templates/profile-readme-pro.md`](./templates/profile-readme-pro.md).
-3. Replace the placeholders with your name, city, links and real stack.
-4. Pick your favorite badges from [`docs/badges.md`](./docs/badges.md).
-5. Check your result with [`docs/profile-checklist.md`](./docs/profile-checklist.md).
-6. Publish one safe public repo using [`docs/launch-plan.md`](./docs/launch-plan.md).
+If you want to come back to these resources later, **star the repo as a bookmark**.
+
+<p align="center">
+  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star GitHub Profile Booster</strong></a>
+</p>
+
+## Before → after
+
+| Before | After using the kit |
+| --- | --- |
+| Empty or generic bio | Clear one-line positioning |
+| Random technology names | Focused, readable stack |
+| No visual hierarchy | Structured sections and badges |
+| Private projects only | Safe public work ideas |
+| README built from scratch | Reusable templates |
+| “I don't know what to add” | Checklist + scorecard + examples |
+
+<p align="center">
+  <img src="./assets/preview.svg" width="100%" alt="Preview of the GitHub Profile Booster kit" />
+</p>
+
+## ⚡ 60-second start
+
+**Fastest route:**
+
+1. Open [`templates/profile-readme-60s.md`](./templates/profile-readme-60s.md).
+2. Copy it into the README of the public repository that matches your GitHub username.
+3. Replace the placeholders: name, focus, stack and featured project.
+4. Commit the file.
+5. Run the [`profile scorecard`](./docs/profile-scorecard.md) and improve anything under 8/10.
+
+Want something more polished? Use the [`Pro template`](./templates/profile-readme-pro.md).
+
+> Tip: your special profile repository must have the **same name as your GitHub username**.
 
 ## Choose your profile style
 
-| Template | Best for |
-| --- | --- |
-| [`profile-readme-pro.md`](./templates/profile-readme-pro.md) | A polished student/junior developer profile. |
-| [`profile-readme-minimal.md`](./templates/profile-readme-minimal.md) | A clean and quiet profile with less visual noise. |
-| [`profile-readme-bilingual.md`](./templates/profile-readme-bilingual.md) | Spanish/English profiles for international visibility. |
+| Template | Best for | Effort |
+| --- | --- | ---: |
+| [`60-second starter`](./templates/profile-readme-60s.md) | Fastest clean profile | ⚡ |
+| [`Pro`](./templates/profile-readme-pro.md) | Strong visual profile with links and featured work | ⭐⭐⭐ |
+| [`Minimal`](./templates/profile-readme-minimal.md) | Clean profile with almost no visual noise | ⭐ |
+| [`Bilingual`](./templates/profile-readme-bilingual.md) | Spanish + English visibility | ⭐⭐ |
 
-## Star-friendly repo formula
+## What is inside?
 
-A repo gets more stars when it is easy to understand, easy to reuse and easy to share.
+| Area | Files | What you get |
+| --- | --- | --- |
+| Profile templates | [`templates/`](./templates) | Ready-made structures you can copy and personalize |
+| Badge catalog | [`docs/badges.md`](./docs/badges.md) | Stack badges and icon snippets |
+| Profile checklist | [`docs/profile-checklist.md`](./docs/profile-checklist.md) | A final quality-control pass |
+| Profile scorecard | [`docs/profile-scorecard.md`](./docs/profile-scorecard.md) | A simple 10-point profile audit |
+| Public repo ideas | [`docs/public-repo-ideas.md`](./docs/public-repo-ideas.md) | Safe ideas for building in public |
+| Launch plan | [`docs/launch-plan.md`](./docs/launch-plan.md) | A practical star-friendly launch checklist |
+| Examples | [`examples/`](./examples) | Copyable openings and profile sections |
+
+## The profile formula
 
 ```text
-clear promise + visual proof + quick start + reusable value + safe scope = more star potential
+clear identity
++ focused stack
++ proof of work
++ one useful public project
++ clean visual hierarchy
+= a profile people understand quickly
 ```
 
-Good examples for students:
+A strong GitHub profile does not need dozens of badges, animated widgets or a huge biography. It needs to answer four questions fast:
 
-| Idea | Why it can earn stars |
-| --- | --- |
-| `github-profile-booster` | Helps other students improve their own profile. |
-| `web-dev-notes` | Clear notes about React, Next.js, TypeScript and APIs. |
-| `student-dev-roadmap` | Learning path with checklists and resources. |
-| `mini-ui-components` | Small reusable components with screenshots. |
-| `database-practice-kit` | SQL/Supabase exercises with clean examples. |
-| `dotnet-basics-lab` | Beginner-friendly C#/.NET exercises explained well. |
+1. **Who are you?**
+2. **What do you build?**
+3. **What technologies do you actually use?**
+4. **Where can I see proof?**
 
-## Safe publishing rules
+## Designed for students and junior developers
 
-Before turning a private project into public content, ask:
+This kit is especially useful when:
 
-- Does it contain private code, keys, tokens, credentials or database URLs?
-- Does it reveal school, client or personal information that should stay private?
-- Can the idea be rewritten as a small generic demo instead?
-- Does the README explain learning value without depending on private context?
+- You are applying for internships or junior roles.
+- Most of your strongest work is private or academic.
+- Your profile looks empty even though you have real projects.
+- You want a bilingual or international-facing profile.
+- You want public repos that show learning without exposing sensitive code.
 
-When in doubt, publish the lesson, template or explanation instead of the original project.
+## Safe by design 🔒
+
+Before publishing anything, check that it does **not** contain:
+
+- API keys, tokens or credentials.
+- Private database URLs.
+- Personal data from classmates, clients or users.
+- Internal school or company material.
+- Proprietary source code you do not have permission to publish.
+
+When in doubt, publish the **lesson, template, demo or explanation** instead of the original private project.
+
+## Want a repo people may actually star?
+
+Use this simple rule:
+
+```text
+clear promise + immediate proof + quick start + reusable value + safe scope
+```
+
+Then check [`docs/launch-plan.md`](./docs/launch-plan.md) before sharing it.
 
 ## Contributing
 
-Contributions are welcome. Good ideas include:
+Small contributions are welcome. You do not need to redesign the whole project.
 
-- More badge examples.
-- New student-friendly README sections.
-- Better launch checklist items.
-- Safe public repo ideas.
-- Translations.
+Good first contributions include:
 
-Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening a pull request.
+- Add a useful badge example.
+- Improve one template section.
+- Add a safe student project idea.
+- Translate or clarify a short section.
+- Suggest a new profile style.
+
+Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) or open the current [good first contribution issue](https://github.com/tec-2022/github-profile-booster/issues/4).
+
+## Roadmap
+
+See [`ROADMAP.md`](./ROADMAP.md) for upcoming ideas and planned improvements.
+
+## Support the project
+
+If this kit helped you improve your profile, the easiest way to support it is simple:
+
+<p align="center">
+  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Give the repo a star</strong></a> &nbsp; · &nbsp;
+  <a href="https://github.com/tec-2022/github-profile-booster/generate"><strong>🚀 Use the template</strong></a>
+</p>
+
+A star helps other students discover the project and also saves it in your GitHub starred repositories for later.
 
 ## License
 
-MIT — use it, remix it and make your profile shine.
-
-
+MIT — use it, remix it and adapt it to your own profile.
