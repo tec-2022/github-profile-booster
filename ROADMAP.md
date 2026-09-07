@@ -13,24 +13,30 @@
 - [x] Public repository ranking by relevance, freshness and documentation.
 - [x] Evidence-based README draft generation.
 - [x] Career Signal Map across multiple directions.
+- [x] Shareable optimizer URLs with username + selected goal.
+- [x] Shareable Career Signal Map URLs.
+- [x] Downloadable 1200×630 social cards for result sharing.
+- [x] Short-lived local caching for repeated public GitHub API reads.
+- [x] Escaped repository text in generated result views.
+- [x] Dedicated Community Showcase page.
+- [x] Automated GitHub Actions quality checks for static pages and JavaScript.
 - [x] GitHub Pages landing site.
-- [x] Community showcase.
 - [x] Launch guidance for star-friendly public repositories.
 - [x] Safe public repo ideas for students.
 
 ## Next intelligence improvements
 
 - [ ] Compare two career goals side by side for the same profile.
-- [ ] Add shareable optimizer URLs that preserve username + selected goal.
 - [ ] Add a repository-level evidence report with documentation and presentation checks.
 - [ ] Detect duplicated / overly broad skill claims that are not supported by visible projects.
 - [ ] Add optional deeper language analysis when GitHub API quota permits.
-- [ ] Let users export the optimizer findings as a Markdown report.
+- [ ] Let users export optimizer findings as a Markdown report.
 - [ ] Add a “profile changed since last audit” local-browser comparison without storing data on a server.
+- [ ] Explore an optional server-side cache/proxy only if public API rate limits become a real usage bottleneck.
 
 ## Experience improvements
 
-- [ ] Add screenshots of finished profile examples.
+- [ ] Add screenshots or short recordings of finished profile examples.
 - [ ] Add Spanish versions of every interactive tool and guide.
 - [ ] Add examples for C#/.NET, Python, Go and Data/AI student repos.
 - [ ] Add a second visual theme for the Pro template.
@@ -38,10 +44,11 @@
 - [ ] Add a short FAQ for common GitHub profile mistakes.
 - [ ] Improve keyboard navigation and accessibility testing across browser tools.
 
-## Community ideas
+## Community and growth
 
-- [ ] Real before/after profile stories contributed by users.
-- [ ] Community-submitted career lenses.
-- [ ] Student profile review events.
+- [ ] Add the first 3–5 real before/after profile stories.
+- [ ] Add community-submitted career lenses.
+- [ ] Run student profile review events.
 - [ ] Expand curated safe public-repo ideas.
-- [ ] Community-submitted profile templates.
+- [ ] Add community-submitted profile templates.
+- [ ] Publish a short demo showing Career Map → Optimizer → README in one flow.
