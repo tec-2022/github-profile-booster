@@ -7,6 +7,7 @@ const required = [
   'index.html',
   'career-map.html',
   'optimizer.html',
+  'compare-goals.html',
   'audit.html',
   'generator.html',
   'showcase.html'
@@ -45,8 +46,18 @@ for (const file of required) {
 }
 
 const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
-for (const expected of ['career-map.html', 'optimizer.html', 'audit.html', 'generator.html']) {
+for (const expected of ['career-map.html', 'optimizer.html', 'compare-goals.html', 'audit.html', 'generator.html', 'showcase.html']) {
   if (!readme.includes(expected)) errors.push(`README does not reference ${expected}`);
+}
+
+const compare = fs.readFileSync(path.join(docsDir, 'compare-goals.html'), 'utf8');
+for (const expected of ['Copy share URL', 'Download comparison card', 'goalA', 'goalB']) {
+  if (!compare.includes(expected)) errors.push(`Comparison page missing expected feature: ${expected}`);
+}
+
+for (const file of ['career-map.html', 'optimizer.html', 'compare-goals.html']) {
+  const html = fs.readFileSync(path.join(docsDir, file), 'utf8');
+  if (!html.includes('URLSearchParams') && !html.includes('searchParams')) errors.push(`${file} should support URL-based results.`);
 }
 
 if (errors.length) {
@@ -55,4 +66,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Static validation passed for ${required.length} pages.`);
+console.log(`Static validation passed for ${required.length} pages, including shareable comparison features.`);
