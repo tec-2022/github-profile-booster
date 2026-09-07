@@ -13,14 +13,15 @@
 
 <p align="center">
   <strong>Do not just decorate your GitHub profile. Make it prove the right things.</strong><br />
-  Goal-aware profile analysis, repository ranking, README generation and reusable profile resources — free and open source.
+  Career-signal mapping, goal-aware profile analysis, repository ranking and evidence-based README generation — free and open source.
 </p>
 
 <p align="center">
+  <a href="https://tec-2022.github.io/github-profile-booster/career-map.html"><strong>🧭 What does my GitHub say?</strong></a> ·
   <a href="https://tec-2022.github.io/github-profile-booster/optimizer.html"><strong>🎯 Optimize for my goal</strong></a> ·
   <a href="https://tec-2022.github.io/github-profile-booster/audit.html"><strong>🔎 Quick audit</strong></a> ·
   <a href="https://tec-2022.github.io/github-profile-booster/generator.html"><strong>✨ README generator</strong></a> ·
-  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star this repo</strong></a> ·
+  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star</strong></a> ·
   <a href="./docs/es/README.md"><strong>Español</strong></a>
 </p>
 
@@ -30,11 +31,32 @@
 
 ---
 
-## 🎯 Flagship tool: Goal-Aware Profile Optimizer
+## 🧭 Career Signal Map: what does your GitHub currently prove?
 
-Most README generators ask what you want to type. The optimizer starts with a different question:
+Your intended career direction and the story visible in your repositories are not always the same.
 
-> **What are you trying to become?**
+The **Career Signal Map** compares your original public repositories across multiple directions at the same time:
+
+- Frontend
+- Backend
+- Full Stack
+- Data / AI
+- Open Source
+- Academic / Research
+
+It answers:
+
+> **If someone saw only my public GitHub today, what direction would the evidence point toward?**
+
+You get a comparative signal map plus the repositories that contribute most strongly to your top directions.
+
+**[Open the Career Signal Map →](https://tec-2022.github.io/github-profile-booster/career-map.html)**
+
+---
+
+## 🎯 Flagship: Goal-Aware Profile Optimizer
+
+Once you know what your GitHub currently communicates, choose what you **want** it to support.
 
 Enter a public GitHub username and choose a target:
 
@@ -46,7 +68,7 @@ Enter a public GitHub username and choose a target:
 - Open Source
 - Academic / Research
 
-The optimizer then reads public GitHub evidence and:
+The optimizer then:
 
 1. **Scores five dimensions** — clarity, proof of work, freshness, goal relevance and credibility.
 2. **Ranks the strongest repositories for that specific goal** instead of blindly showing the most-starred repos.
@@ -56,22 +78,22 @@ The optimizer then reads public GitHub evidence and:
 
 **[Open the Goal-Aware Optimizer →](https://tec-2022.github.io/github-profile-booster/optimizer.html)**
 
-> The score is a presentation heuristic, not a measure of programming ability or employability.
+> Scores are presentation heuristics, not measures of programming ability, employability or career potential.
 
 ---
 
 ## Why this is different
 
-A lot of profile tooling is excellent at **adding things**: badges, trophies, streaks, widgets, stats cards and animated sections.
+A lot of excellent profile tooling is optimized for **adding things**: badges, trophies, streaks, widgets, stats cards and animated sections.
 
-GitHub Profile Booster is deliberately built around **evidence and positioning**.
+GitHub Profile Booster is deliberately built around **evidence, positioning and direction**.
 
 | Typical profile tool | GitHub Profile Booster |
 | --- | --- |
-| “Which widgets do you want?” | “What goal should your profile support?” |
-| Uses whatever projects you manually enter | Ranks your existing public repos for the selected goal |
+| “Which widgets do you want?” | “What does your GitHub currently prove?” |
+| One generic profile | Compare multiple career signals first |
+| Uses projects you manually enter | Ranks existing public repos for the selected goal |
 | Generates a prettier README | Generates a README grounded in public evidence |
-| One generic profile | Different recommendations for Frontend, Backend, Data/AI, Open Source, etc. |
 | More visual elements = more complete | Proof, relevance and clarity matter more than decoration |
 | Static checklist | Prioritized fixes based on what your profile actually contains |
 
@@ -79,15 +101,21 @@ The objective is not to create the loudest README. It is to create one a visitor
 
 ---
 
-## Three tools, one improvement loop
+## Four tools, one improvement loop
 
-### 🎯 1. Goal-Aware Optimizer
+### 🧭 1. Career Signal Map
 
-Best when you already have public repositories and want to know **what should represent you**.
+Best when you want to discover **what story your public GitHub tells today** before deciding what to optimize.
+
+**[Map my career signals →](https://tec-2022.github.io/github-profile-booster/career-map.html)**
+
+### 🎯 2. Goal-Aware Optimizer
+
+Best when you already know your target and want to know **which repos should represent you**.
 
 **[Run goal-aware analysis →](https://tec-2022.github.io/github-profile-booster/optimizer.html)**
 
-### 🔎 2. Quick Profile Audit
+### 🔎 3. Quick Profile Audit
 
 Best when you only want a fast check of the public profile README itself.
 
@@ -95,7 +123,7 @@ It checks ten practical signals such as identity, structure, stack, proof of wor
 
 **[Audit a profile →](https://tec-2022.github.io/github-profile-booster/audit.html)**
 
-### ✨ 3. README Generator
+### ✨ 4. README Generator
 
 Best when you want manual control. Choose your details, stack and style, then copy or download the generated Markdown.
 
@@ -104,7 +132,8 @@ Best when you want manual control. Choose your details, stack and style, then co
 The full loop is:
 
 ```text
-choose a goal
+map what GitHub currently communicates
+→ choose a goal
 → analyze real public work
 → select the strongest evidence
 → generate / edit README
@@ -132,20 +161,19 @@ Would the visible projects make sense for the role or direction you selected?
 ### Credibility
 Are the featured repositories documented, maintained and supported by visible public activity?
 
-This matters because a GitHub profile is not just a Markdown page. GitHub itself exposes a profile README alongside public work, contribution activity and pinned items; presentation and evidence work together.
-
 ---
 
 ## Before → after
 
 | Before | After using the toolkit |
 | --- | --- |
-| “I know React, Python, C#, Docker...” | “These three repos prove the stack relevant to my target.” |
-| Random pinned or featured work | Goal-aware repository shortlist |
+| “I think my GitHub looks Full Stack.” | Career Signal Map shows what the evidence actually emphasizes |
+| “I know React, Python, C#, Docker...” | “These three repos best prove the stack relevant to my target.” |
+| Random featured work | Goal-aware repository shortlist |
 | Old projects mixed with current work | Freshness is surfaced explicitly |
 | Generic README | Goal-specific positioning |
 | Decorative badges without context | Evidence-linked project descriptions |
-| “My profile is 7/10” | “These are the five fixes with the highest impact.” |
+| “My profile is 7/10” | “These are the fixes with the highest impact.” |
 | README written from memory | Draft based on public repositories actually found |
 
 <p align="center">
@@ -158,6 +186,7 @@ This matters because a GitHub profile is not just a Markdown page. GitHub itself
 
 | Resource | What it does |
 | --- | --- |
+| [Career Signal Map](https://tec-2022.github.io/github-profile-booster/career-map.html) | Compare multiple career directions from the same public GitHub evidence |
 | [Goal-Aware Optimizer](https://tec-2022.github.io/github-profile-booster/optimizer.html) | Career-goal analysis, repo ranking, prioritized fixes and evidence-based draft |
 | [Quick Profile Audit](https://tec-2022.github.io/github-profile-booster/audit.html) | 10-signal public README heuristic |
 | [README Generator](https://tec-2022.github.io/github-profile-booster/generator.html) | Browser-based Markdown builder with copy/download |
@@ -178,6 +207,9 @@ A technology badge is a claim. A maintained repository with a useful README is e
 
 ### Goal aware
 There is no single “best GitHub profile”. A Data/AI profile should foreground different evidence than a Frontend or Open Source profile.
+
+### Diagnose before decorating
+The toolkit first asks what the public evidence communicates, then helps you decide what to change.
 
 ### Focus over badge soup
 A visitor should not need to decode 40 icons before finding your strongest project.
@@ -202,11 +234,11 @@ The goal is to build a library of **real profiles with different objectives**, n
 
 Useful contributions include:
 
+- Improve career-signal heuristics.
 - Improve goal-ranking heuristics.
 - Add a new career lens.
 - Improve repository scoring.
 - Add accessible generator options.
-- Add a safe public-project idea.
 - Improve multilingual support.
 - Submit a real before/after profile example.
 - Fix wording, links or accessibility issues.
@@ -221,8 +253,8 @@ If the tools help you, a GitHub star is the simplest way to support the project 
 
 <p align="center">
   <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star GitHub Profile Booster</strong></a> &nbsp; · &nbsp;
-  <a href="https://tec-2022.github.io/github-profile-booster/optimizer.html"><strong>🎯 Optimize my profile</strong></a> &nbsp; · &nbsp;
-  <a href="https://tec-2022.github.io/github-profile-booster/generator.html"><strong>✨ Build a README</strong></a>
+  <a href="https://tec-2022.github.io/github-profile-booster/career-map.html"><strong>🧭 Map my signals</strong></a> &nbsp; · &nbsp;
+  <a href="https://tec-2022.github.io/github-profile-booster/optimizer.html"><strong>🎯 Optimize my profile</strong></a>
 </p>
 
 ## License
