@@ -12,71 +12,113 @@
 </p>
 
 <p align="center">
-  <strong>Turn a plain GitHub profile into a polished developer landing page in minutes.</strong><br />
-  Free templates, badges, checklists and practical profile ideas for students and junior developers.
+  <strong>Generate, audit and improve your GitHub profile README in minutes.</strong><br />
+  Free browser tools + copy-ready templates for students and junior developers.
 </p>
 
 <p align="center">
-  <a href="#-60-second-start"><strong>⚡ Start in 60 seconds</strong></a> ·
-  <a href="https://github.com/tec-2022/github-profile-booster/generate"><strong>Use this template</strong></a> ·
+  <a href="https://tec-2022.github.io/github-profile-booster/generator.html"><strong>✨ Generate my README</strong></a> ·
+  <a href="https://tec-2022.github.io/github-profile-booster/audit.html"><strong>🔎 Audit my profile</strong></a> ·
+  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star this repo</strong></a> ·
   <a href="https://tec-2022.github.io/github-profile-booster/"><strong>Live site</strong></a> ·
   <a href="./docs/es/README.md"><strong>Español</strong></a>
 </p>
 
 <p align="center">
-  <sub>No signup · No private code required · Copy, customize and publish</sub>
+  <sub>No signup · No backend for your form data · No private code required · MIT licensed</sub>
 </p>
+
+---
+
+## Two free tools you can use right now
+
+### ✨ Profile README Generator
+
+Stop starting from a blank file.
+
+The browser generator lets you enter your:
+
+- Name and developer headline.
+- Short bio and location.
+- Technology stack.
+- Featured project.
+- Portfolio and LinkedIn links.
+- Preferred visual style.
+
+It generates Markdown live and lets you **copy it or download `README.md`**.
+
+**[Open the README Generator →](https://tec-2022.github.io/github-profile-booster/generator.html)**
+
+### 🔎 Public Profile Audit
+
+Already have a profile README? Check it first.
+
+Enter a public GitHub username and the audit checks ten practical signals, including:
+
+- Clear introduction.
+- Positioning and purpose.
+- Readable structure.
+- Focused technology stack.
+- Proof of work.
+- Useful public links.
+- Visual hierarchy.
+- Current-focus signal.
+- A clear next step for visitors.
+
+You get an approximate **score out of 10** plus specific suggestions for missing signals.
+
+> The audit measures README clarity, not programming ability or employability.
+
+**[Audit a public GitHub profile →](https://tec-2022.github.io/github-profile-booster/audit.html)**
 
 ---
 
 ## Why this repo is worth keeping ⭐
 
-Most profile guides tell you what a good GitHub profile should contain. This repo gives you the pieces to build one immediately.
+Most GitHub profile guides explain what you *should* do. GitHub Profile Booster gives you tools and reusable assets to actually do it.
 
-You get:
+| Need | Use this |
+| --- | --- |
+| “I do not know what to write.” | [README Generator](https://tec-2022.github.io/github-profile-booster/generator.html) |
+| “Is my profile any good?” | [Profile Audit](https://tec-2022.github.io/github-profile-booster/audit.html) |
+| “I want full control over the Markdown.” | [`templates/`](./templates) |
+| “My profile feels unfinished.” | [`profile-checklist.md`](./docs/profile-checklist.md) |
+| “I want a manual scoring framework.” | [`profile-scorecard.md`](./docs/profile-scorecard.md) |
+| “Most of my real projects are private.” | [`public-repo-ideas.md`](./docs/public-repo-ideas.md) |
+| “I want my public repo to be easier to discover.” | [`launch-plan.md`](./docs/launch-plan.md) |
 
-- **Ready-to-copy profile README templates** instead of starting from a blank page.
-- **A 60-second starter** for people who want the fastest possible setup.
-- **Badge and stack snippets** you can paste directly into Markdown.
-- **A profile quality checklist** to catch weak or unfinished sections.
-- **A profile scorecard** to rate your profile before sharing it.
-- **Safe public-repo ideas** for students who cannot publish private school or client code.
-- **A launch checklist** for making useful public repos easier to understand and star.
-
-If you want to come back to these resources later, **star the repo as a bookmark**.
-
-<p align="center">
-  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star GitHub Profile Booster</strong></a>
-</p>
+If these are resources you may use again, **star the repo as a bookmark**.
 
 ## Before → after
 
 | Before | After using the kit |
 | --- | --- |
 | Empty or generic bio | Clear one-line positioning |
-| Random technology names | Focused, readable stack |
-| No visual hierarchy | Structured sections and badges |
-| Private projects only | Safe public work ideas |
-| README built from scratch | Reusable templates |
-| “I don't know what to add” | Checklist + scorecard + examples |
+| Random technology names | Focused stack you actually use |
+| No proof of work | Featured public project |
+| Huge block of text | Readable sections and hierarchy |
+| Private projects only | Safe public-work ideas |
+| Guessing what is missing | Automatic audit + manual scorecard |
+| README built from scratch | Generator + reusable templates |
 
 <p align="center">
-  <img src="./assets/preview.svg" width="100%" alt="Preview of the GitHub Profile Booster kit" />
+  <img src="./assets/preview.svg" width="100%" alt="Preview of GitHub Profile Booster resources" />
 </p>
 
-## ⚡ 60-second start
+## ⚡ Fastest path
 
-**Fastest route:**
+1. Run the **[Profile Audit](https://tec-2022.github.io/github-profile-booster/audit.html)** if you already have a public profile README.
+2. Open the **[README Generator](https://tec-2022.github.io/github-profile-booster/generator.html)** or copy the [`60-second starter`](./templates/profile-readme-60s.md).
+3. Add your real focus, actual stack and one proof-of-work project.
+4. Copy or download the Markdown.
+5. Put it in the public repository that has the **same name as your GitHub username**.
+6. Re-run the audit and improve the remaining weak signals.
 
-1. Open [`templates/profile-readme-60s.md`](./templates/profile-readme-60s.md).
-2. Copy it into the README of the public repository that matches your GitHub username.
-3. Replace the placeholders: name, focus, stack and featured project.
-4. Commit the file.
-5. Run the [`profile scorecard`](./docs/profile-scorecard.md) and improve anything under 8/10.
+That creates a simple loop:
 
-Want something more polished? Use the [`Pro template`](./templates/profile-readme-pro.md).
-
-> Tip: your special profile repository must have the **same name as your GitHub username**.
+```text
+audit → generate → publish → audit again → improve
+```
 
 ## Choose your profile style
 
@@ -87,17 +129,20 @@ Want something more polished? Use the [`Pro template`](./templates/profile-readm
 | [`Minimal`](./templates/profile-readme-minimal.md) | Clean profile with almost no visual noise | ⭐ |
 | [`Bilingual`](./templates/profile-readme-bilingual.md) | Spanish + English visibility | ⭐⭐ |
 
-## What is inside?
+## Everything in the kit
 
-| Area | Files | What you get |
-| --- | --- | --- |
-| Profile templates | [`templates/`](./templates) | Ready-made structures you can copy and personalize |
-| Badge catalog | [`docs/badges.md`](./docs/badges.md) | Stack badges and icon snippets |
-| Profile checklist | [`docs/profile-checklist.md`](./docs/profile-checklist.md) | A final quality-control pass |
-| Profile scorecard | [`docs/profile-scorecard.md`](./docs/profile-scorecard.md) | A simple 10-point profile audit |
-| Public repo ideas | [`docs/public-repo-ideas.md`](./docs/public-repo-ideas.md) | Safe ideas for building in public |
-| Launch plan | [`docs/launch-plan.md`](./docs/launch-plan.md) | A practical star-friendly launch checklist |
-| Examples | [`examples/`](./examples) | Copyable openings and profile sections |
+| Resource | What you get |
+| --- | --- |
+| [README Generator](https://tec-2022.github.io/github-profile-booster/generator.html) | Browser-based Markdown builder with copy and download |
+| [Profile Audit](https://tec-2022.github.io/github-profile-booster/audit.html) | Automatic heuristic audit of a public profile README |
+| [`templates/`](./templates) | Copy-ready profile README structures |
+| [`docs/badges.md`](./docs/badges.md) | Badge and stack snippets |
+| [`docs/profile-checklist.md`](./docs/profile-checklist.md) | Quality-control checklist |
+| [`docs/profile-scorecard.md`](./docs/profile-scorecard.md) | Manual 10-point audit |
+| [`docs/public-repo-ideas.md`](./docs/public-repo-ideas.md) | Safe public-project ideas |
+| [`docs/launch-plan.md`](./docs/launch-plan.md) | Star-friendly public-repo launch checklist |
+| [`examples/`](./examples) | Copyable examples |
+| [`SHOWCASE.md`](./SHOWCASE.md) | Community profiles that voluntarily submit their results |
 
 ## The profile formula
 
@@ -105,78 +150,64 @@ Want something more polished? Use the [`Pro template`](./templates/profile-readm
 clear identity
 + focused stack
 + proof of work
-+ one useful public project
++ useful links
 + clean visual hierarchy
 = a profile people understand quickly
 ```
 
-A strong GitHub profile does not need dozens of badges, animated widgets or a huge biography. It needs to answer four questions fast:
+A strong profile should help a visitor answer four questions fast:
 
 1. **Who are you?**
 2. **What do you build?**
 3. **What technologies do you actually use?**
 4. **Where can I see proof?**
 
-## Designed for students and junior developers
+## Community showcase 🌟
 
-This kit is especially useful when:
+Used the generator or audit to improve your public profile? You can voluntarily submit it to the [`Community Showcase`](./SHOWCASE.md).
 
-- You are applying for internships or junior roles.
-- Most of your strongest work is private or academic.
-- Your profile looks empty even though you have real projects.
-- You want a bilingual or international-facing profile.
-- You want public repos that show learning without exposing sensitive code.
+The showcase is designed to become a library of **real, diverse examples**, rather than forcing everyone into one identical template.
 
 ## Safe by design 🔒
 
-Before publishing anything, check that it does **not** contain:
+The generator processes its form fields in the browser. Do not put sensitive information in a public GitHub README.
+
+Before publishing anything, make sure it does **not** contain:
 
 - API keys, tokens or credentials.
 - Private database URLs.
 - Personal data from classmates, clients or users.
-- Internal school or company material.
+- Internal school or company information.
 - Proprietary source code you do not have permission to publish.
 
 When in doubt, publish the **lesson, template, demo or explanation** instead of the original private project.
 
-## Want a repo people may actually star?
-
-Use this simple rule:
-
-```text
-clear promise + immediate proof + quick start + reusable value + safe scope
-```
-
-Then check [`docs/launch-plan.md`](./docs/launch-plan.md) before sharing it.
-
 ## Contributing
 
-Small contributions are welcome. You do not need to redesign the whole project.
+Small contributions are welcome. Good first contributions include:
 
-Good first contributions include:
+- Add a badge or stack option.
+- Improve a template section.
+- Add a safe public-project idea.
+- Improve the generator or audit heuristics.
+- Translate a resource.
+- Fix unclear wording or accessibility issues.
 
-- Add a useful badge example.
-- Improve one template section.
-- Add a safe student project idea.
-- Translate or clarify a short section.
-- Suggest a new profile style.
-
-Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) or open the current [good first contribution issue](https://github.com/tec-2022/github-profile-booster/issues/4).
+Start with the current [good first issue](https://github.com/tec-2022/github-profile-booster/issues/4) or read [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
 ## Roadmap
 
-See [`ROADMAP.md`](./ROADMAP.md) for upcoming ideas and planned improvements.
+See [`ROADMAP.md`](./ROADMAP.md) for planned improvements.
 
 ## Support the project
 
-If this kit helped you improve your profile, the easiest way to support it is simple:
+If GitHub Profile Booster helped you, the simplest support is a star. It also saves the project in your starred repositories for later.
 
 <p align="center">
-  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Give the repo a star</strong></a> &nbsp; · &nbsp;
-  <a href="https://github.com/tec-2022/github-profile-booster/generate"><strong>🚀 Use the template</strong></a>
+  <a href="https://github.com/tec-2022/github-profile-booster"><strong>⭐ Star GitHub Profile Booster</strong></a> &nbsp; · &nbsp;
+  <a href="https://tec-2022.github.io/github-profile-booster/generator.html"><strong>✨ Generate a README</strong></a> &nbsp; · &nbsp;
+  <a href="https://tec-2022.github.io/github-profile-booster/audit.html"><strong>🔎 Audit a profile</strong></a>
 </p>
-
-A star helps other students discover the project and also saves it in your GitHub starred repositories for later.
 
 ## License
 
