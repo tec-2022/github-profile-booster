@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented here.
 
+## 1.3.0 - 2026-09-06
+
+- Added **shareable result URLs** to the Goal-Aware Optimizer using `user` + `goal` query parameters.
+- Added shareable URLs to the Career Signal Map and automatic result loading when a shared URL is opened.
+- Added downloadable **1200×630 social cards** for optimizer results and career-signal maps.
+- Added short-lived local browser caching for public GitHub API responses to reduce repeated requests.
+- Added HTML escaping for repository text rendered into result views.
+- Added a dedicated Community Showcase web page and fixed previously missing `showcase.html` links.
+- Added GitHub Actions quality checks for required pages, JavaScript syntax, basic page metadata and local relative links.
+- Added a repository quality badge to the main README.
+- Updated the README to document shareable results, social cards, caching and automated QA.
+
 ## 1.2.0 - 2026-09-06
 
 - Added the **Goal-Aware Profile Optimizer** with career-specific scoring for Internship/Junior, Frontend, Backend, Full Stack, Data/AI, Open Source and Academic/Research directions.
