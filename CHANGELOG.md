@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented here.
 
+## 2.0.0 - 2026-09-06
+
+GitHub Profile Booster graduates from a README/template kit into a **goal-aware GitHub career/profile intelligence toolkit**.
+
+- Added **Career Goal Comparison** for side-by-side analysis of two career directions on the same public GitHub profile.
+- Added score-gap analysis, five evidence dimensions per goal, goal-specific repository rankings, transferable-repository detection and a practical bridge plan toward the second selected goal.
+- Added shareable comparison URLs using `user`, `a` and `b` query parameters.
+- Added downloadable **1200×630 comparison cards**.
+- Reworked the main README and landing page around the v2 workflow: Diagnose → Compare → Position → Publish → Re-audit → Share.
+- Added a direct maintainer demo for `@tec-2022` so visitors can test the product without entering data first.
+- Expanded automated QA so Career Goal Comparison and the sharing controls are required parts of the static site.
+- Repositioned templates and badges as supporting resources instead of the primary product.
+- Prepared v2 release notes, launch copy and a launch checklist for repository metadata, social preview and first external showcase examples.
+
 ## 1.3.0 - 2026-09-06
 
 - Added **shareable result URLs** to the Goal-Aware Optimizer using `user` + `goal` query parameters.
