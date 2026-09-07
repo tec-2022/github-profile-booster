@@ -29,6 +29,8 @@ I'm a computer science student focused on building useful web applications, orga
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/OpenAI%20Astra-7c3aed?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Astra" />
 </p>
 
 ## Public work
@@ -42,3 +44,4 @@ I'm a computer science student focused on building useful web applications, orga
 - Building better interfaces.
 - Practicing clean commits and pull requests.
 - Turning private project lessons into safe public resources.
+
