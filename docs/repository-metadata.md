@@ -1,10 +1,10 @@
 # Recommended GitHub repository metadata
 
-Use these settings in the repository **About** panel so the public metadata matches the current product.
+Use these settings in the repository **About** panel so the public metadata matches the v2 product.
 
 ## Description
 
-Goal-aware GitHub profile intelligence: map career signals, rank your strongest public repos, audit your evidence, and generate a better README.
+Goal-aware GitHub profile intelligence: map career signals, compare goals, rank your strongest public repos, and build an evidence-based README.
 
 ## Website
 
@@ -29,6 +29,8 @@ Keep the topic list focused on discovery intent rather than every feature.
 - `job-search`
 - `portfolio-analysis`
 - `career-development`
+- `career-planning`
+- `developer-career`
 
 ## Social preview copy
 
@@ -42,16 +44,20 @@ What does your GitHub actually prove?
 
 **Supporting line**
 
-Career Signal Map · Goal-Aware Optimizer · Profile Audit · README Generator
+Career Signal Map · Goal Comparison · Goal-Aware Optimizer · README Generator
 
 **CTA**
 
-Analyze your public GitHub →
+Diagnose · Compare · Position →
 
 ## Positioning rule
 
 Do not describe the project primarily as a badge or template collection anymore. The current positioning is:
 
-> Goal-aware, evidence-first GitHub profile tooling.
+> Goal-aware, evidence-first GitHub career/profile intelligence.
 
 The reusable templates and badges are supporting resources, not the core product.
+
+## Manual GitHub settings still required
+
+The connected GitHub integration used to maintain this project does not expose repository About/topics or Social Preview write operations. Apply the settings above from the GitHub repository UI and upload the prepared 1280×640 Social Preview there.
