@@ -1,5 +1,9 @@
 # GitHub Profile Booster 🚀
 
+[English](README.md) · [Español](README.es.md) · [Live demo](https://tec-2022.github.io/github-profile-booster/) · [Sponsor](https://github.com/sponsors/tec-2022)
+
+[![GitHub Profile Booster demo](docs/media/demo.gif)](docs/media/demo.mp4)
+
 <p align="center">
   <img src="./assets/hero.svg" width="100%" alt="GitHub Profile Booster" />
 </p>
